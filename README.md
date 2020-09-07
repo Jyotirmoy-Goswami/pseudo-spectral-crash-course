@@ -11,10 +11,6 @@ Lecture 7: Revision
 Lecture 8: 
 Lecture 9: 
 Lecture 10: 
-
-https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-loop.html
-http://users.metu.edu.tr/csert/me582/ME582%20Ch%2001.pdf
-
 Lecture 11: 
 Lecture 12: 
 
@@ -88,6 +84,11 @@ https://books.google.com/books?id=8iW0MDOVr0oC&printsec=frontcover&source=gbs_ge
 You may go to Chapter 3, Section 3.1, Page- 33-34 and read-up a little.
 
 Lecture 10: 
+
+
+https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-loop.html
+http://users.metu.edu.tr/csert/me582/ME582%20Ch%2001.pdf
+
 Lecture 11: 
 
 Here is a nice link from where, I learnt OpenMP first. May be you guys also will like:
