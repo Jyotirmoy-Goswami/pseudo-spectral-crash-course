@@ -11,8 +11,92 @@ Lecture 7: Revision
 Lecture 8: 
 Lecture 9: 
 Lecture 10: 
+
+https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-loop.html
+http://users.metu.edu.tr/csert/me582/ME582%20Ch%2001.pdf
+
 Lecture 11: 
 Lecture 12: 
+
+
+=== Resources ===
+
+Lecture 1: 
+Lecture 2: 
+Lecture 3: 
+Lecture 4: 
+
+Well, I just identified the error.
+Look at Line: 347 in the Subroutine AdamsBashforth.
+    omegak_new(i,j) = omegak(Nh,Ny) + ..........
+should be replaced as
+    omegak_new(i,j) = omegak(i,j) + ...........
+You can now replace it in the shared version and try to check!
+
+Lecture 5: 
+Lecture 6: 
+
+And, regarding Aliasing and de-aliasing methods, I have explained in short in the next lecture. But for a more detailed overview you can look at the following link:
+https://en.wikipedia.org/wiki/Aliasing
+https://www.astro.auth.gr/~vlahos/GravitoplasmaWS1/pseudo-spectral_2.pdf
+
+Resources:
+https://arxiv.org/abs/1711.10865
+https://doi.org/10.1073/pnas.1509304112
+https://doi.org/10.1103/PhysRevLett.75.2486
+https://doi.org/10.1017/S0022112061000378
+https://doi.org/10.1088/1742-6596/1548/1/012037
+
+Lecture 7: Revision
+
+Following are few papers on simulating bounded flows via pseudo-spectral method. May be we can have a bit of discussion sometime later on such simulations, since flows in bounded domains are the most natural systems. Also, you guys can try to implement the technique in the 2D code that all of us together wrote few weeks ago! You can also search independently about such methods. One helpful google-search key may be - "Volume penalization method".
+
+One other option to simulate boundaries / bounded flows, within pseudo-spectral scheme is - instead of using the Fourier transform, one can use sine-Fourier or cosine-Fourier transforms while taking the derivatives. Such libraries are easily available within the FFTW architecture but I had a hard time in the implementation process. May be, young blood can rejuvenate the endeavor!!!
+
+http://dx.doi.org/10.1016/j.jcp.2014.05.038
+https://doi.org/10.1016/j.cpc.2010.05.019
+https://doi.org/10.1016/j.compfluid.2004.09.006
+
+Missed Lecture:
+
+Though we missed today's class, you can get some funny videos on turbulence (some of which you can now simulate now using the 2dfft.f95 code) here.
+https://www.youtube.com/watch?v=5zI9sG3pjVU
+
+And here is one more link (http://www.lcs-fast.com/fifth_order/) that shows some spectral simulation of air flows around a racing-car. But note that these are not pseudo-spectral. The basic idea is same though. The only difference is, instead of Fourier basis, they have used Legendre or Chebyshev basis (and sometimes Hermite also!) for better accuracy! If you are feeling confused, revise our first discussion and specifically look at the first slide!
+
+Mid-week fun and quiz:
+
+In the middle of the week, I thought of sharing some 'funny' movies!
+https://w3.pppl.gov/~hammett/viz/viz.html
+You can watch the first two movies and find out what is/are the primary instability(s) occurring within the DIII-D tokamak!
+(DIII-D is just a name of a tokamak, somewhere in the west coast of USA, in case you have not heard about it earlier)
+
+And this takes me to Quiz - 6:
+Can you write down, what extra things we need to add in our 2dfft.f95 code, to simulate such a 'real-life' plasma?
+So thought of sharing the link with you all.
+https://www.youtube.com/playlist?list=PLYwpaL_SFmcA1eJbqwvjKgsnT321hXRGx
+
+
+Lecture 8: 
+Lecture 9: 
+
+Here is a question cum hint for you to proceed for Quiz - 1:
+What is the dimension of x in the expression exp(x)?
+
+And here is a link of Davidson's book
+https://books.google.com/books?id=8iW0MDOVr0oC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false
+You may go to Chapter 3, Section 3.1, Page- 33-34 and read-up a little.
+
+Lecture 10: 
+Lecture 11: 
+
+Here is a nice link from where, I learnt OpenMP first. May be you guys also will like:
+https://chryswoods.com/beginning_openmp/index.html
+And here is his general course link:
+https://chryswoods.com/main/courses.html
+
+Lecture 12: 
+
 
 === Quiz ===
 
@@ -25,14 +109,9 @@ Quiz - 1: Can you modify the 1D Burgers code, and reproduce electron-plasma-osci
 Quiz - 2: And eventually increase the amplitude of perturbation and see how does the plasma frequency changes as nonlinearity enters via large amplitude perturbation. Remember, our code successfully passed one of the most difficult tests of nonlinearity - the shock problem!!!
 
 Lecture 4: No Quiz
-Well, I just identified the error.
-Look at Line: 347 in the Subroutine AdamsBashforth.
-    omegak_new(i,j) = omegak(Nh,Ny) + ..........
-should be replaced as
-    omegak_new(i,j) = omegak(i,j) + ...........
-You can now replace it in the shared version and try to check!
-
-Lecture 5: https://en.wikipedia.org/wiki/Ackermann_function
+Lecture 5: 
+Quiz - 3:
+https://en.wikipedia.org/wiki/Ackermann_function
 
 :<math> 
 \begin{array}{lcl}
@@ -48,55 +127,29 @@ Do NOT use 'function' call.
 Lecture 6: 
 Quiz - 4: Since all of you now know, how to take 1D and 2D Fourier transforms, can you now create a 3D array and take its Fourier transform and then inverse Fourier transform and check whether you get back the input 3D array?
 
-And, regarding Aliasing and de-aliasing methods, I have explained in short in the next lecture. But for a more detailed overview you can look at the following link:
-https://en.wikipedia.org/wiki/Aliasing
-https://www.astro.auth.gr/~vlahos/GravitoplasmaWS1/pseudo-spectral_2.pdf
-
-Resources:
-https://arxiv.org/abs/1711.10865
-https://doi.org/10.1073/pnas.1509304112
-https://doi.org/10.1103/PhysRevLett.75.2486
-https://doi.org/10.1017/S0022112061000378
-https://doi.org/10.1088/1742-6596/1548/1/012037
-
 Lecture 7: Revision
-Attaching few papers on simulating bounded flows via pseudo-spectral method. May be we can have a bit of discussion sometime later on such simulations, since flows in bounded domains are the most natural systems. Also, you guys can try to implement the technique in the 2D code that all of us together wrote few weeks ago! You can also search independently about such methods. One helpful google-search key may be - "Volume penalization method".:slightly_smiling_face:
-One other option to simulate boundaries / bounded flows, within pseudo-spectral scheme is - instead of using the Fourier transform, one can use sine-Fourier or cosine-Fourier transforms while taking the derivatives. Such libraries are easily available within the FFTW architecture but I had a hard time in the implementation process. May be, young blood can rejuvenate the endeavor!!!
-http://dx.doi.org/10.1016/j.jcp.2014.05.038
-https://doi.org/10.1016/j.cpc.2010.05.019
-https://doi.org/10.1016/j.compfluid.2004.09.006
+Quiz - 5: Solution: derivative_3d_recipe.md
+Quiz - 6: See in Resources
 
-You can get some funny videos on turbulence (some of which you can now simulate now using the 2dfft.f95 code) here.
-https://www.youtube.com/watch?v=5zI9sG3pjVU
-In the middle of the week, I thought of sharing some 'funny' movies!
-https://w3.pppl.gov/~hammett/viz/viz.html
-You can watch the first two movies and find out what is/are the primary instability(s) occurring within the DIII-D tokamak!
-(DIII-D is just a name of a tokamak, somewhere in the west coast of USA, in case you have not heard about it earlier)
-And this takes me to Quiz - 6:
-Can you write down, what extra things we need to add in our 2dfft.f95 code, to simulate such a 'real-life' plasma?
-So thought of sharing the link with you all.
-https://www.youtube.com/playlist?list=PLYwpaL_SFmcA1eJbqwvjKgsnT321hXRGx
-Lecture 8: 
-Lecture 9: 
+Lecture 8: No Quiz
+Lecture 9: No Quiz
+
 Lecture 10: 
-https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-loop.html
-http://users.metu.edu.tr/csert/me582/ME582%20Ch%2001.pdf
-Dear all,
-I added some comments at the end of the program that we just wrote today.
-If you can run the program, it will print some comments those comments will give you some hint about, why for 2 nodes, it did not give us correct result.
+
+I added some comments at the end of the program that we just wrote today. If you can run the program, it will print some comments those comments will give you some hint about, why for 2 nodes, it did not give us correct result.
 Also, further at the end, it will print your Quiz - 8!
+
 And finally what if, I send you a file and ask, what does this program do?
 To compile and run this file, you may use the following command:
-mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 2d_fft.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
+mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
+
 Quiz - 9: Can you turn the code [3d_hybrid_poisson.f95] into a 3d hybrid Poisson solver?
 If you can solve Quiz - 9, this course is over!!!
-Lecture 11: 
-Here is a nice link from where, I learnt OpenMP first. May be you guys also will like:
-https://chryswoods.com/beginning_openmp/index.html
-And here is his general course link:
-https://chryswoods.com/main/courses.html
+
+Lecture 11: No Quiz
+
 Lecture 12: 
-Quiz - ??: The 2D algorithm I described today for the tracer particles (interpolating from grid to particle position) had 4 if-conditions . Now check out the 'big' expression (https://arxiv.org/pdf/1810.12707.pdf, Page No 7, Section VI, A, at the bottom part of the page) and tell me how many if-conditions  you have to write for this case?
+Quiz - 10: The 2D algorithm I described today for the tracer particles (interpolating from grid to particle position) had 4 if-conditions . Now check out the 'big' expression (https://arxiv.org/pdf/1810.12707.pdf, Page No 7, Section VI, A, at the bottom part of the page) and tell me how many if-conditions  you have to write for this case?
 
 
 Lecture 1: fftw_1d.f95 + burgulence.f95 (test.f95 + test_1.f95)
