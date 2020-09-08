@@ -83,22 +83,20 @@ And this takes me to Quiz - 6:
 Here is a question cum hint for you to proceed for Quiz - 1:
 What is the dimension of x in the expression exp(x)?
 
-And here is a link of Davidson's book
-https://books.google.com/books?id=8iW0MDOVr0oC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false
-You may go to Chapter 3, Section 3.1, Page- 33-34 and read-up a little.
+And here is a link of Davidson's book [Methods in Nonlinear Plasma Theory](https://books.google.no/books?id=8iW0MDOVr0oC&lpg=PP1&hl=no&pg=PP1#v=onepage&q&f=false). You may go to Chapter 3, Section 3.1, Page 33-34 and read-up a little.
 
 ## Lecture 10: 
 
 
-https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-loop.html
-http://users.metu.edu.tr/csert/me582/ME582%20Ch%2001.pdf
+* https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-loop.html
+* http://users.metu.edu.tr/csert/me582/ME582%20Ch%2001.pdf
 
 ## Lecture 11: 
 
 Here is a nice link from where, I learnt OpenMP first. May be you guys also will like:
-https://chryswoods.com/beginning_openmp/index.html
+* https://chryswoods.com/beginning_openmp/index.html
 And here is his general course link:
-https://chryswoods.com/main/courses.html
+* https://chryswoods.com/main/courses.html
 
 ## Lecture 12: 
 
@@ -139,7 +137,7 @@ Solution: derivative_3d_recipe.md
 ### Quiz - 6: 
 Can you write down, what extra things we need to add in our 2dfft.f95 code, to simulate such a 'real-life' plasma?
 Need inspiration? watch this,
-https://www.youtube.com/playlist?list=PLYwpaL_SFmcA1eJbqwvjKgsnT321hXRGx
+[High Performance Computing /Parallel Computing](https://www.youtube.com/playlist?list=PLYwpaL_SFmcA1eJbqwvjKgsnT321hXRGx)
 
 ## Lecture 8: 
 No Quiz
