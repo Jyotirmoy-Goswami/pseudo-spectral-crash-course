@@ -5,18 +5,19 @@ A repository of teaching algorithms for fluid codes. A series of lectures are av
 
 [Webinar on "Pseudo Spectral Method"](https://www.youtube.com/playlist?list=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
 
-Lecture 1: 
-Lecture 2: 
-Lecture 3: 
-Lecture 4: 
-Lecture 5: 
-Lecture 6: 
-Lecture 7: Revision
-Lecture 8: 
-Lecture 9: 
-Lecture 10: 
-Lecture 11: 
-Lecture 12: 
+# Lecture description"
+1. Lecture 1: 
+2. Lecture 2: 
+3. Lecture 3: 
+4. Lecture 4: 
+5. Lecture 5: 
+6. Lecture 6: 
+7. Lecture 7: Revision
+8. Lecture 8: 
+9. Lecture 9: 
+10. Lecture 10: 
+11. Lecture 11: 
+12. Lecture 12: 
 
 
 === Resources ===
