@@ -44,15 +44,15 @@ No resources Available
 ## Lecture 6: 
 
 Regarding Aliasing and de-aliasing methods, I have explained in short in the next lecture (**Lecture 7**). But for a more detailed overview you can look at the following link:
-https://en.wikipedia.org/wiki/Aliasing
-https://www.astro.auth.gr/~vlahos/GravitoplasmaWS1/pseudo-spectral_2.pdf
+* https://en.wikipedia.org/wiki/Aliasing
+* https://www.astro.auth.gr/~vlahos/GravitoplasmaWS1/pseudo-spectral_2.pdf
 
 ### Resources:
-https://arxiv.org/abs/1711.10865
-https://doi.org/10.1073/pnas.1509304112
-https://doi.org/10.1103/PhysRevLett.75.2486
-https://doi.org/10.1017/S0022112061000378
-https://doi.org/10.1088/1742-6596/1548/1/012037
+* https://arxiv.org/abs/1711.10865
+* https://doi.org/10.1073/pnas.1509304112
+* https://doi.org/10.1103/PhysRevLett.75.2486
+* https://doi.org/10.1017/S0022112061000378
+* https://doi.org/10.1088/1742-6596/1548/1/012037
 
 ## Lecture 7: 
 Following are few papers on simulating bounded flows via pseudo-spectral method. May be we can have a bit of discussion sometime later on such simulations, since flows in bounded domains are the most natural systems. Also, you guys can try to implement the technique in the 2D code that all of us together wrote few weeks ago! You can also search independently about such methods. One helpful google-search key may be - "Volume penalization method".
@@ -120,14 +120,10 @@ No Quiz
 ### Quiz - 3:
 https://en.wikipedia.org/wiki/Ackermann_function
 <img src="https://render.githubusercontent.com/render/math?math=A(0,n) = (n+1)">
-<img src="https://render.githubusercontent.com/render/math?math=\operatorname{A}(0, n) & = & n + 1">
-:<math> 
-\begin{array}{lcl}
-\operatorname{A}(0, n) & = & n + 1 \\
-\operatorname{A}(m+1, 0) & = & \operatorname{A}(m, 1) \\
-\operatorname{A}(m+1, n+1) & = & \operatorname{A}(m, A(m+1, n))
-\end{array}
-</math>
+
+<img src="https://render.githubusercontent.com/render/math?math=A(m+1,0) = A(m,1)">
+
+<img src="https://render.githubusercontent.com/render/math?math=A(m+1,n+1) = A(m,A(m+1,n))">
 
 Evaluate A(3,11) and send your answer to me (each of you individually)! 
 Do NOT use 'function' call.
