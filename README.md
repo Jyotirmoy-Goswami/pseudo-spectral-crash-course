@@ -160,7 +160,7 @@ No Quiz
 ### Quiz - 5: 
 Solution: derivative_3d_recipe.md
 ### Quiz - 6: 
-Can you write down, what extra things we need to add in our 2dfft.f95 code, to simulate such a 'real-life' plasma in these funny movies described in [extras]()?
+Can you write down, what extra things we need to add in our 2dfft.f95 code, to simulate such a 'real-life' plasma in these funny movies described in [extras](#extras)?
 
 ## Lecture 8: 
 No Quiz
