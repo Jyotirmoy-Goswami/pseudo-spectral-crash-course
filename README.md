@@ -17,19 +17,31 @@ A series of lectures are available on youtube based on the materials archived in
 
 [Webinar on "Pseudo Spectral Method"](https://www.youtube.com/playlist?list=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
 
-# Lecture description (Yet to be updated) 
+# Lecture description
 ## Lecture 1: 
+Yet to be updated
 ## Lecture 2: 
+Yet to be updated
 ## Lecture 3: 
+Yet to be updated
 ## Lecture 4: 
+Yet to be updated
 ## Lecture 5: 
+Yet to be updated
 ## Lecture 6: 
-## Lecture 7: Revision
+Yet to be updated
+## Lecture 7 (Revision): 
+Yet to be updated
 ## Lecture 8: 
+Yet to be updated
 ## Lecture 9: 
+Yet to be updated
 ## Lecture 10: 
+Yet to be updated
 ## Lecture 11: 
+Yet to be updated
 ## Lecture 12: 
+Yet to be updated
 
 
 # Resources and tips related to each lecture
