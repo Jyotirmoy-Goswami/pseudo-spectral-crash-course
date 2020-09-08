@@ -167,19 +167,23 @@ No Quiz
 ### Quiz - 10: 
 The 2D algorithm I described today for the tracer particles (interpolating from grid to particle position) had 4 if-conditions . Now check out the 'big' expression (https://arxiv.org/pdf/1810.12707.pdf, Page No 7, Section VI, A, at the bottom part of the page) and tell me how many if-conditions  you have to write for this case?
 
+# Code Reference
+The name of the codes/programs have been modified to recognize the pupose of the codes easily. The names used in the lectures can be found from the following table:
 
-Lecture 1: fftw_1d.f95 + burgulence.f95 (test.f95 + test_1.f95)
-Lecture 2: fourier_transform.f95 + burgulence.f95 (fourier.f95 + test_1.f95)
-Lecture 3: fftw_2d.f95 (2d_fft.f95)
-Lecture 4: poisson_2d.f95 (2d_fft.f95)
-Lecture 5: fluid_2d.f95 (2d_fft.f95)
-Lecture 6: fluid_2d.f95 (2d_fft.f95) + KH instability
-Lecture 7: Revision
-Lecture 8: omp_do.f95 + omp_nested_do.f95 (omp.f95)
-Lecture 9: mpi_do.f95 (mpi.f95)
-Lecture 10: mpi_nested_do.f95 + hybrid_do.f95 (mpi.f95 + hybrid.f95)
-Lecture 11: fftw_omp.f95 + fftw_mpi.f95 (2d_fft.f95)
-Lecture 12: fluid_2d_with_tracers.f95 (2d_fft.f95)
+Lecture | Code Name | Original Name | Code Name | Original Name 
+------- | --------- | ------------- | --------- | -------------
+Lecture 1 | fftw_1d.f95 | test.f95 | burgulence.f95 | test_1.f95
+Lecture 2 | fourier_transform.f95 | fourier.f95 | burgulence.f95 | test_1.f95
+Lecture 3 | fftw_2d.f95 | 2d_fft.f95
+Lecture 4 | poisson_2d.f95 | 2d_fft.f95
+Lecture 5 | fluid_2d.f95 | 2d_fft.f95
+Lecture 6 | fluid_2d.f95 | 2d_fft.f95
+Lecture 7 |
+Lecture 8 | omp_do.f95 | omp.f95 | omp_nested_do.f95 | omp.f95
+Lecture 9 | mpi_do.f95 | mpi.f95
+Lecture 10| mpi_nested_do.f95 | mpi.f95 | hybrid_do.f95 | hybrid.f95
+Lecture 11| fftw_omp.f95 | 2d_fft.f95 | fftw_mpi.f95 | 2d_fft.f95
+Lecture 12| fluid_2d_with_tracers.f95 | 2d_fft.f95
 
 # Code Description
 ## fftw_1d.f95: 
@@ -213,34 +217,34 @@ This code is an extension of the code fluid_2d.f95. Identical to the fluid_2d.f9
 
 # Commands to run the programs/codes
 #### Serial Do Loop compilation
-```shell
+```console
 gfortran <program_name.f95>; ./a.out
 ```
 #### OpenMP Do Loop compilation
-```shell
+```console
 gfortran -fopenmp <program_name.f95>; ./a.out
 ```
 #### MPI Do Loop compilation
-```shell
+```console
 mpif90 <program_name.f95>; mpirun -np 4 ./a.out
 ```
 #### Hybrid Do Loop compilation
-```shell
+```console
 mpif90 -fopenmp <program_name.f95>; mpirun -np 4 ./a.out
 ```
 #### Serial FFTW compilation
-```shell
+```console
 gfortran -I/usr/local/include -L/usr/local/lib <program_name.f95> -lfftw3 -lm; ./a.out
 ```
-####OpenMP FFTW compilation
-```shell
+#### OpenMP FFTW compilation
+```console
 gfortran -fopenmp -I/usr/local/include -L/usr/local/lib <program_name.f95> -lfftw3_omp -lfftw3 -lm; ./a.out
 ```
 #### MPI FFTW compilation
-```shell
+```console
 mpif90 -I/usr/local/include -L/usr/local/lib <program_name.f95> -lfftw3_mpi -lfftw3 -lm; mpirun -np 4 ./a.out
 ```
 #### Hybrid FFTW compilation
-```shell
+```console
 mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib <program_name.f95> -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 4 ./a.out
 ```
