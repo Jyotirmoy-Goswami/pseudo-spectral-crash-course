@@ -91,21 +91,20 @@ You can get some funny videos on turbulence (some of which you can now simulate 
 https://www.youtube.com/watch?v=5zI9sG3pjVU
 
 And here is one more link (http://www.lcs-fast.com/fifth_order/) that shows some spectral simulation of air flows around a racing-car. But note that these are not pseudo-spectral. The basic idea is same though. The only difference is, instead of Fourier basis, they have used Legendre or Chebyshev basis (and sometimes Hermite also!) for better accuracy! If you are feeling confused, revise our first discussion and specifically look at the first slide!
-
-[In the middle of the week](#anchor1)In the middle of the week, I thought of sharing some 'funny' movies!
+##### Extras
+In the middle of the week In the middle of the week, I thought of sharing some 'funny' movies!
 https://w3.pppl.gov/~hammett/viz/viz.html
 You can watch the first two movies and find out what is/are the primary instability(s) occurring within the DIII-D tokamak!
 (DIII-D is just a name of a tokamak, somewhere in the west coast of USA, in case you have not heard about it earlier)
 
 And this takes me to [Quiz - 6](#quiz---6):
 
+## Lecture 8: 
 Need inspiration? watch this,
 [High Performance Computing /Parallel Computing](https://www.youtube.com/playlist?list=PLYwpaL_SFmcA1eJbqwvjKgsnT321hXRGx)
-
-## Lecture 8: 
 ## Lecture 9: 
 
-Here is a question cum hint for you to proceed for Quiz - 1:
+Here is a question cum hint for you to proceed for [Quiz - 1](#quiz---1):
 What is the dimension of x in the expression exp(x)?
 
 And here is a link of Davidson's book [Methods in Nonlinear Plasma Theory](https://books.google.no/books?id=8iW0MDOVr0oC&lpg=PP1&hl=no&pg=PP1#v=onepage&q&f=false). You may go to Chapter 3, Section 3.1, Page 33-34 and read-up a little.
