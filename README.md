@@ -92,7 +92,7 @@ https://www.youtube.com/watch?v=5zI9sG3pjVU
 
 And here is one more link (http://www.lcs-fast.com/fifth_order/) that shows some spectral simulation of air flows around a racing-car. But note that these are not pseudo-spectral. The basic idea is same though. The only difference is, instead of Fourier basis, they have used Legendre or Chebyshev basis (and sometimes Hermite also!) for better accuracy! If you are feeling confused, revise our first discussion and specifically look at the first slide!
 ##### Extras
-In the middle of the week In the middle of the week, I thought of sharing some 'funny' movies!
+In the middle of the week, I thought of sharing some 'funny' movies!
 https://w3.pppl.gov/~hammett/viz/viz.html
 You can watch the first two movies and find out what is/are the primary instability(s) occurring within the DIII-D tokamak!
 (DIII-D is just a name of a tokamak, somewhere in the west coast of USA, in case you have not heard about it earlier)
@@ -160,7 +160,7 @@ No Quiz
 ### Quiz - 5: 
 Solution: derivative_3d_recipe.md
 ### Quiz - 6: 
-Can you write down, what extra things we need to add in our 2dfft.f95 code, to simulate such a ['real-life' plasma](#anchor1)?
+Can you write down, what extra things we need to add in our 2dfft.f95 code, to simulate such a 'real-life' plasma in these funny movies described in [extras]()?
 
 ## Lecture 8: 
 No Quiz
