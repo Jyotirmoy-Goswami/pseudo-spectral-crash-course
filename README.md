@@ -1,5 +1,9 @@
-# Fluid teaching
-a repository for teaching algorithms for fluid codes!
+Fluid teaching
+===============================================
+A repository of teaching algorithms for fluid codes. A series of lectures are available on youtube based on the materials archived in this repository. Click on the link provided below to access the lectures.
+
+
+[Webinar on "Pseudo Spectral Method"](https://www.youtube.com/playlist?list=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
 
 Lecture 1: 
 Lecture 2: 
