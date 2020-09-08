@@ -5,37 +5,41 @@ A repository of teaching algorithms for fluid codes. A series of lectures are av
 
 [Webinar on "Pseudo Spectral Method"](https://www.youtube.com/playlist?list=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
 
-# Lecture description"
-1. Lecture 1: 
-2. Lecture 2: 
-3. Lecture 3: 
-4. Lecture 4: 
-5. Lecture 5: 
-6. Lecture 6: 
-7. Lecture 7: Revision
-8. Lecture 8: 
-9. Lecture 9: 
-10. Lecture 10: 
-11. Lecture 11: 
-12. Lecture 12: 
+# Lecture description (Yet to be updated) 
+## Lecture 1: 
+## Lecture 2: 
+## Lecture 3: 
+## Lecture 4: 
+## Lecture 5: 
+## Lecture 6: 
+## Lecture 7: Revision
+## Lecture 8: 
+## Lecture 9: 
+## Lecture 10: 
+## Lecture 11: 
+## Lecture 12: 
 
 
-=== Resources ===
+# Resources and tips related to each lecture
 
-Lecture 1: 
-Lecture 2: 
-Lecture 3: 
-Lecture 4: 
+## Lecture 1: 
+## Lecture 2: 
+## Lecture 3: 
+## Lecture 4: 
+There was a error in the code we were writing today :smiley:. Well, I just identified the error. 
 
-Well, I just identified the error.
-Look at Line: 347 in the Subroutine AdamsBashforth.
+Look at **Line: 347** in the Subroutine *AdamsBashforth*.
+```
     omegak_new(i,j) = omegak(Nh,Ny) + ..........
+```
 should be replaced as
+```
     omegak_new(i,j) = omegak(i,j) + ...........
+```
 You can now replace it in the shared version and try to check!
 
-Lecture 5: 
-Lecture 6: 
+## Lecture 5: 
+## Lecture 6: 
 
 And, regarding Aliasing and de-aliasing methods, I have explained in short in the next lecture. But for a more detailed overview you can look at the following link:
 https://en.wikipedia.org/wiki/Aliasing
@@ -48,7 +52,9 @@ https://doi.org/10.1103/PhysRevLett.75.2486
 https://doi.org/10.1017/S0022112061000378
 https://doi.org/10.1088/1742-6596/1548/1/012037
 
-Lecture 7: Revision
+## Lecture 7: 
+
+Revision
 
 Following are few papers on simulating bounded flows via pseudo-spectral method. May be we can have a bit of discussion sometime later on such simulations, since flows in bounded domains are the most natural systems. Also, you guys can try to implement the technique in the 2D code that all of us together wrote few weeks ago! You can also search independently about such methods. One helpful google-search key may be - "Volume penalization method".
 
@@ -78,8 +84,8 @@ So thought of sharing the link with you all.
 https://www.youtube.com/playlist?list=PLYwpaL_SFmcA1eJbqwvjKgsnT321hXRGx
 
 
-Lecture 8: 
-Lecture 9: 
+## Lecture 8: 
+## Lecture 9: 
 
 Here is a question cum hint for you to proceed for Quiz - 1:
 What is the dimension of x in the expression exp(x)?
@@ -88,23 +94,23 @@ And here is a link of Davidson's book
 https://books.google.com/books?id=8iW0MDOVr0oC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false
 You may go to Chapter 3, Section 3.1, Page- 33-34 and read-up a little.
 
-Lecture 10: 
+## Lecture 10: 
 
 
 https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-loop.html
 http://users.metu.edu.tr/csert/me582/ME582%20Ch%2001.pdf
 
-Lecture 11: 
+## Lecture 11: 
 
 Here is a nice link from where, I learnt OpenMP first. May be you guys also will like:
 https://chryswoods.com/beginning_openmp/index.html
 And here is his general course link:
 https://chryswoods.com/main/courses.html
 
-Lecture 12: 
+## Lecture 12: 
 
 
-=== Quiz ===
+# Quiz
 
 Lecture 1: No Quiz
 
