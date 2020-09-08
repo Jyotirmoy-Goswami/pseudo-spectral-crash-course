@@ -16,7 +16,7 @@ A series of lectures are available on youtube based on the materials archived in
 
 
 [Webinar on "Pseudo Spectral Method"](https://www.youtube.com/playlist?list=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
-
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu/0.jpg)](http://www.youtube.com/watch?v=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
 # Lecture description
 ## Lecture 1: 
 To make a post-programming fun of my coding, you guys can go to Time = 1:41:33 of the first video link and see how the error entered into our code due to copy-paste from the previous line, which kept us bothering!:joy:
