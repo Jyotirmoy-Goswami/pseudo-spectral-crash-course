@@ -2,15 +2,15 @@ Fluid teaching
 ===============================================
 A repository of teaching numerical algorithms for solving fluid equations. 
 
-We have described pseudo-spectral method for spatial discretization. The equations solved in this lecture series are two dimensional incompressible fluid equations in vorticity (\omega) - stream function (\psi) formalism.
+We have described pseudo-spectral method for spatial discretization. The equations solved in this lecture series are two dimensional incompressible fluid equations in vorticity (<img src="https://render.githubusercontent.com/render/math?math=\omega">) - stream function (<img src="https://render.githubusercontent.com/render/math?math=\psi">) formalism.
 
-\begin{eqnarray}
-&& \frac{\partial \vec{\omega}}{\partial t} + \vec{u} \cdot \vec{\nabla} \vec{\omega} = \nu \nabla^2 \vec{\omega} \\
-&& \vec{\omega} = \vec{\nabla} \times \vec{u} \\
-&& \nabla^2 \psi = - \omega 
-\end{eqnarray}
 
-The wave-form is assumed to be /sim exp(i(kx-wt)). Hence derivative w.r.t. x gives ik only (and NOT -ik).
+<img src="https://render.githubusercontent.com/render/math?math=\frac{\partial \vec{\omega}}{\partial t} %2B \vec{u} \cdot \vec{\nabla} \vec{\omega} = \nu \nabla^2 \vec{\omega}">
+<img src="https://render.githubusercontent.com/render/math?math=\vec{\omega} = \vec{\nabla} \times \vec{u}">
+<img src="https://render.githubusercontent.com/render/math?math=\nabla^2 \psi = - \omega ">
+
+
+The wave-form is assumed to be <img src="https://render.githubusercontent.com/render/math?math=\exp(i(kx-wt))">. Hence derivative w.r.t. x gives ik only (and NOT -ik).
 
 A series of lectures are available on youtube based on the materials archived in this repository. Click on the link provided below to access the lectures.
 
