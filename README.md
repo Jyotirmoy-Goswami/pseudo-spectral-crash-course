@@ -16,7 +16,8 @@ A series of lectures are available on youtube based on the materials archived in
 
 
 [Webinar on "Pseudo Spectral Method"](https://www.youtube.com/playlist?list=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu/0.jpg)](http://www.youtube.com/watch?v=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
+
+[![Webinar on "Pseudo Spectral Method"](http://img.youtube.com/vi/m_dle8vr3dU/0.jpg)](https://www.youtube.com/embed/videoseries?list=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
 # Lecture description
 ## Lecture 1: 
 To make a post-programming fun of my coding, you guys can go to Time = 1:41:33 of the first video link and see how the error entered into our code due to copy-paste from the previous line, which kept us bothering!:joy:
@@ -192,7 +193,7 @@ Also, further at the end, it will print your Quiz - 8!
 
 And finally what if, I send you a file and ask, what does this program do?
 To compile and run this file, you may use the following command:
-```
+```console
 mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
 ```
 ### Quiz - 9: 
