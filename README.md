@@ -74,6 +74,21 @@ Happy coding!
 
 ## Lecture 3: 
 Here I talked about the two dimensional form of the Navier-Stokes equation, its component-by-component decomposition into Cartesian basis, the vorticity - stream-function formalism for incompressible fluid and finally some tips on how to use the multi-dimensional FFTW library. As a prelude to pseudo-spectrally solve the two dimensional incompressible Navier-Stokes equation using multi-dimensional FFTW library, I first took a set of uniform random numbers as an input of a 2D array, took its Fourier transform and then took inverse Fourier transform to come back to the real space. If I get back the input array, it shows that we have learned using the multi-dimensional FFTW library perfectly! In the last part, I described a bit about the two dimensional Poisson solver using this freshly brewed code! The numerical example is solved in the next lecture.
+
+<details>
+<summary>Quizzes</summary> 
+    
+### Quiz - 1: 
+Can you modify the 1D Burgers code, and reproduce electron-plasma-oscillation? 
+
+(Hint: Look at the plasma oscillation section of Davidson's book)
+
+### Quiz - 2: 
+And eventually increase the amplitude of perturbation and see how does the plasma frequency changes as nonlinearity enters via large amplitude perturbation. Remember, our code successfully passed one of the most difficult tests of nonlinearity - the shock problem!!!
+
+</details>
+
+
 ## Lecture 4: 
 As promised, I solved the two dimensional Poisson solver using multi-dimensional FFTW library, but before that, I revised the numerical subtleties of multi-dimensional FFTW library that I described in the last lecture. The revision took almost half of the lecture and in the rest of the part I showed the numerical implementation as an extension of the program written in the last lecture. At the fag end I talked about some seminal benchmarking papers for two dimensional fluid codes!
 ## Lecture 5: 
