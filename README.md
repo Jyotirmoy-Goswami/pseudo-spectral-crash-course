@@ -77,6 +77,8 @@ Happy coding!
 
 </details>
 
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/B0wgOq_ECpI)
+
 ## Lecture 3: 
 Here I talked about the two dimensional form of the Navier-Stokes equation, its component-by-component decomposition into Cartesian basis, the vorticity - stream-function formalism for incompressible fluid and finally some tips on how to use the multi-dimensional FFTW library. As a prelude to pseudo-spectrally solve the two dimensional incompressible Navier-Stokes equation using multi-dimensional FFTW library, I first took a set of uniform random numbers as an input of a 2D array, took its Fourier transform and then took inverse Fourier transform to come back to the real space. If I get back the input array, it shows that we have learned using the multi-dimensional FFTW library perfectly! In the last part, I described a bit about the two dimensional Poisson solver using this freshly brewed code! The numerical example is solved in the next lecture.
 
@@ -93,10 +95,13 @@ And eventually increase the amplitude of perturbation and see how does the plasm
 
 </details>
 
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/AS2ubgAKW80)
 
 ## Lecture 4: 
 As promised, I solved the two dimensional Poisson solver using multi-dimensional FFTW library, but before that, I revised the numerical subtleties of multi-dimensional FFTW library that I described in the last lecture. The revision took almost half of the lecture and in the rest of the part I showed the numerical implementation as an extension of the program written in the last lecture. At the fag end I talked about some seminal benchmarking papers for two dimensional fluid codes!
 
+
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/zDAMAdWk0DM)
 
 ## Lecture 5: 
 This is probably the most crucial lecture. Starting from last lecture's code, I developed a two dimensional incompressible fluid solver. In the first part I described the basic equaitons to be solved in the vorticity - stream-function formalism at length and then developed the code. Unfortunately, the code had a bug which I later identified and pointed out in the beginning of the next lecture.
@@ -120,6 +125,8 @@ This is probably the most crucial lecture. Starting from last lecture's code, I 
 Evaluate <img src="https://render.githubusercontent.com/render/math?math=A(3,11)"> and do NOT use *function* call.
 
 </details>
+
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/Jd86s2-8Zi0)
 
 ## Lecture 6: 
 There was an error in the code we were writing in the last lecture :smiley:. Well, I identified the error. 
@@ -198,6 +205,9 @@ enddo
 </details>
 
 
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/XTalV2kUDPA)
+
+
 ## Lecture 7 (Revision): 
 I got a feedback that I am going too fast. Hence we decided to pause for a bit, put one full lecture for revision and then proceed for parallelization. So in this lecture, I talked again about the numerical aspects of capturing Kelvin-Helmholtz instability, analytical growth rate, numerical comparison, delineated a bit in to aliazing errors and went back into the lecture slide of the first lecture, compared our previous codes line-by-line with the algorithm described in the lecture slide and finally for the first time touched the aspects of three dimensional arrays.
 
@@ -237,7 +247,7 @@ Can you write down, what extra things we need to add in our 2dfft.f95 code, to s
 </details>
 
 
-
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/HoD9UJvOkPQ)
 
 ## Lecture 8: 
 Here I started with some 'funny' movies (both hydrodynamics and plasmas) and don't know how, got drifted towards my favourite stereographic projection and topology while talking about periodic boundary condition. Finally I could hold myself and came back to simulation discussions on bounded flows using spectral methods. In the second half of the lecture, I talked about basic ideas about multi-core and multi-node parallelization and its simple numerical implementations, explicitly showing how to parallelize "do-loops" for OpenMP and MPI architechtures.
@@ -251,6 +261,8 @@ Need inspiration? watch this,
 
 </details>
 
+
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/b35LvlSZOuc)
 
 
 ## Lecture 9: 
@@ -267,6 +279,8 @@ And here is a link of Davidson's book [Methods in Nonlinear Plasma Theory](https
 
 </details>
 
+
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/7FRiqSK6mBU)
 
 ## Lecture 10: 
 Here I went to 2D arrays! Basically I extended the "do-loop" example I described in the last lecture for two dimensional arrays. This extension is crucial since we will need it when you will be parallelizing the code we wrote up in Lecture 5 and 6.
@@ -303,6 +317,9 @@ If you can solve Quiz - 9, this course is over!!!
 
 
 
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/87KAvsfV73w)
+
+
 ## Lecture 11: 
 This is the most important lecture for you, if you want to get our code parallelized that we developed in Lecture 5 and 6. When I say 'parallelize', I mean both multi-core (OpenMP) and multi-node (MPI). After talking about how to parallelize nested "do-loops" in the last lecture, here I showed how to use the parallelized FFTW library. Thus at the end of the lecture, all of you become potentially capable to write an OpenMP and MPI parallel two dimensional incompressible Navier-Stokes equation solver! Start with the code we developed in Lecture 5 and 6. Make all the "do-loops" parallel using the prescription in Lecture 9 and replace all the FFTW calls using the prescription in Lecture 10. You are all set!!!
 
@@ -317,6 +334,9 @@ And here is his general course link:
 * https://chryswoods.com/main/courses.html
 
 </details>
+
+
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/mrAoE4lFvas)
 
 
 ## Lecture 12: 
@@ -334,6 +354,7 @@ The 2D algorithm I described today for the tracer particles (interpolating from 
 </details>
 
 
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/IoTquSbTgoQ)
 
 
 # Code Reference
