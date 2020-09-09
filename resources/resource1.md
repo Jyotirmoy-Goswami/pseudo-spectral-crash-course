@@ -9,4 +9,4 @@ $ sudo ./configure --enable-threads --enable-openmp --with-g77-wrappers
 $ sudo make
 $ sudo make install
 ```
-[Back to Lecture - 1](fluid_teaching#lecture-1)
+[Back to Lecture - 1](https://github.com/RupakMukherjee/fluid_teaching#lecture-1)
