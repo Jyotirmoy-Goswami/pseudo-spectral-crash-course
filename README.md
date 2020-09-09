@@ -103,11 +103,14 @@ And eventually increase the amplitude of perturbation and see how does the plasm
 
 </details>
 
+Lecture Video: 
+
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/AS2ubgAKW80)
 
 ## Lecture 4: 
 As promised, I solved the two dimensional Poisson solver using multi-dimensional FFTW library, but before that, I revised the numerical subtleties of multi-dimensional FFTW library that I described in the last lecture. The revision took almost half of the lecture and in the rest of the part I showed the numerical implementation as an extension of the program written in the last lecture. At the fag end I talked about some seminal benchmarking papers for two dimensional fluid codes!
 
+Lecture Video: 
 
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/zDAMAdWk0DM)
 
@@ -133,6 +136,8 @@ This is probably the most crucial lecture. Starting from last lecture's code, I 
 Evaluate <img src="https://render.githubusercontent.com/render/math?math=A(3,11)"> and do NOT use *function* call.
 
 </details>
+
+Lecture Video: 
 
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/Jd86s2-8Zi0)
 
@@ -213,6 +218,8 @@ enddo
 </details>
 
 
+Lecture Video: 
+
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/XTalV2kUDPA)
 
 
@@ -255,6 +262,8 @@ Can you write down, what extra things we need to add in our 2dfft.f95 code, to s
 </details>
 
 
+Lecture Video: 
+
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/HoD9UJvOkPQ)
 
 ## Lecture 8: 
@@ -269,6 +278,8 @@ Need inspiration? watch this,
 
 </details>
 
+
+Lecture Video: 
 
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/b35LvlSZOuc)
 
@@ -287,6 +298,8 @@ And here is a link of Davidson's book [Methods in Nonlinear Plasma Theory](https
 
 </details>
 
+
+Lecture Video: 
 
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/7FRiqSK6mBU)
 
@@ -324,6 +337,7 @@ If you can solve Quiz - 9, this course is over!!!
 </details>
 
 
+Lecture Video: 
 
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/87KAvsfV73w)
 
@@ -343,6 +357,7 @@ And here is his general course link:
 
 </details>
 
+Lecture Video: 
 
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/mrAoE4lFvas)
 
@@ -361,6 +376,7 @@ The 2D algorithm I described today for the tracer particles (interpolating from 
 
 </details>
 
+Lecture Video: 
 
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/IoTquSbTgoQ)
 
