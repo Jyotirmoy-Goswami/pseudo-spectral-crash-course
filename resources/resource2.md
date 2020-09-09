@@ -18,4 +18,4 @@ So, [here is yours!](https://www.youtube.com/watch?v=tFtpM-Evo90&list=PL04QVxpjc
 
 Happy coding!
 
-[Back to Lecture - 1](https://github.com/RupakMukherjee/fluid_teaching#lecture-1)
+[Back to Lecture - 2](https://github.com/RupakMukherjee/fluid_teaching#lecture-2)
