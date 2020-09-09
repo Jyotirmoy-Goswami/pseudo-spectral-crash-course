@@ -2,8 +2,9 @@ Fluid teaching
 ===============================================
 A repository of teaching numerical algorithms for solving fluid equations. 
 
-Instructor: [Rupak Mukherjee](https://github.com/RupakMukherjee)
-Contributor: [Sayan Adhikari](https://github.com/sayanadhikari)
+Instructor: [Dr. Rupak Mukherjee](https://github.com/RupakMukherjee)
+
+Contributor: [Dr. Sayan Adhikari](https://github.com/sayanadhikari)
 
 We have described pseudo-spectral method for spatial discretization. The equations solved in this lecture series are two dimensional incompressible fluid equations in vorticity (<img src="https://render.githubusercontent.com/render/math?math=\omega">) - stream function (<img src="https://render.githubusercontent.com/render/math?math=\psi">) formalism.
 
