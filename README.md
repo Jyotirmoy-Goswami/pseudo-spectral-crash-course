@@ -48,6 +48,29 @@ $ sudo make install
 
 ## Lecture 2: 
 In this lecture, I first delineated some basic properties of the Burgers equation and compared them with our freshly brewed "burgulence.f95" code (the one that we developed in the first lecture) and then described some basic idea about discontinuity (which will appear in the form of 'shock' in later part of this course) and how to capture that using our simple numerical techniques. Next I compare the algorithm mentioned in my slide with the code we developed in the last lecture. And then got drifted into turbulence, scaling, energy cascades etc. which I did not intend to cover.
+
+<details>
+<summary>Resources</summary>  
+    
+As mentioned, I add the link of Blackboard lectures by Jayanta K. Bhattacharjee(JKB) and Rama Govindarajan.
+
+[Lecture 1 by JKB](https://www.youtube.com/watch?v=0JMeOwgQT-k&list=PL04QVxpjcnjhcA2iryoRvU86o939OrZSo&index=4)
+
+[Lecture 1 by Rama Govindarajan](https://www.youtube.com/watch?v=-zbwHOXiLzc&list=PL04QVxpjcnjhcA2iryoRvU86o939OrZSo&index=6)
+
+Follow-up lectures (Lecture 2,3,4 etc.) should be found in the upper-right-hand corner.
+
+And, and, and...
+
+Here you can find, how I am cheating you in every lecture.:wink: [And hopefully, in the next lecture also](https://www.youtube.com/watch?v=EOYJc2Vuju0&index=54&list=PL04QVxpjcnjhcA2iryoRvU86o939OrZSo&hd=1):shushing_face:
+
+Lastly, kudos to all of you, for your immense patience in my lousy discussions. Each of you really deserve at-least one candy!:yum:
+
+So, [here is yours!](https://www.youtube.com/watch?v=tFtpM-Evo90&list=PL04QVxpjcnjhcA2iryoRvU86o939OrZSo&index=37)
+
+Happy coding!
+
+</details>
 ## Lecture 3: 
 Here I talked about the two dimensional form of the Navier-Stokes equation, its component-by-component decomposition into Cartesian basis, the vorticity - stream-function formalism for incompressible fluid and finally some tips on how to use the multi-dimensional FFTW library. As a prelude to pseudo-spectrally solve the two dimensional incompressible Navier-Stokes equation using multi-dimensional FFTW library, I first took a set of uniform random numbers as an input of a 2D array, took its Fourier transform and then took inverse Fourier transform to come back to the real space. If I get back the input array, it shows that we have learned using the multi-dimensional FFTW library perfectly! In the last part, I described a bit about the two dimensional Poisson solver using this freshly brewed code! The numerical example is solved in the next lecture.
 ## Lecture 4: 
