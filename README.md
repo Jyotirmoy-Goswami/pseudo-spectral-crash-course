@@ -50,17 +50,17 @@ should be replaced as
 ```
 Afterwards, I talked about the basic idea of Kelvin-Helmholtz instability, how to capture it numerically (there are some subtleties here). Finally our baby-code performed well to reproduce the analytical growth rate calculated by P G Drazin and thus passed one very critical test! Then I mentioned some papers, talked about few interesting open problems that can be 'easily' attacked using our simple baby code and finally sketched some aspects of parallel computing that we will be covering in the rest of the course.
 ## Lecture 7 (Revision): 
-Yet to be updated
+I got a feedback that I am going too fast. Hence we decided to pause for a bit, put one full lecture for revision and then proceed for parallelization. So in this lecture, I talked again about the numerical aspects of capturing Kelvin-Helmholtz instability, analytical growth rate, numerical comparison, delineated a bit in to aliazing errors and went back into the lecture slide of the first lecture, compared our previous codes line-by-line with the algorithm described in the lecture slide and finally for the first time touched the aspects of three dimensional arrays.
 ## Lecture 8: 
-Yet to be updated
+Here I started with some 'funny' movies (both hydrodynamics and plasmas) and don't know how, got drifted towards my favourite stereographic projection and topology while talking about periodic boundary condition. Finally I could hold myself and came back to simulation discussions on bounded flows using spectral methods. In the second half of the lecture, I talked about basic ideas about multi-core and multi-node parallelization and its simple numerical implementations, explicitly showing how to parallelize "do-loops" for OpenMP and MPI architechtures.
 ## Lecture 9: 
-Yet to be updated
+In this lecture I talked about MPI architechture in very detail explaining the bits as elaborately as possible. At the end, I just had re-done the single "do-loop" example that I outlined in the last lecture. 
 ## Lecture 10: 
-Yet to be updated
+Here I went to 2D arrays! Basically I extended the "do-loop" example I described in the last lecture for two dimensional arrays. This extension is crucial since we will need it when you will be parallelizing the code we wrote up in Lecture 5 and 6.
 ## Lecture 11: 
-Yet to be updated
+This is the most important lecture for you, if you want to get our code parallelized that we developed in Lecture 5 and 6. When I say 'parallelize', I mean both multi-core (OpenMP) and multi-node (MPI). After talking about how to parallelize nested "do-loops" in the last lecture, here I showed how to use the parallelized FFTW library. Thus at the end of the lecture, all of you become potentially capable to write an OpenMP and MPI parallel two dimensional incompressible Navier-Stokes equation solver! Start with the code we developed in Lecture 5 and 6. Make all the "do-loops" parallel using the prescription in Lecture 9 and replace all the FFTW calls using the prescription in Lecture 10. You are all set!!!
 ## Lecture 12: 
-Yet to be updated
+The first part of this lecture extends over a set of previous lecture series on molecular-dynamics simulation and then smoothly connects to "smooth particle hydrodynamics" and enters into the pseudo-spectral code we developed in Lecture 5 and 6. Finally I talked about adding some passive tracer particles delineating some crude and very basic idea about particle-in-cell algorithm and particle pusher schemes we used in the molecular-dynamics simulation series lecture. In between the lecture I also have stressed the need of the implementation of this scheme and its potential applications!
 
 
 # Resources and tips related to each lecture
