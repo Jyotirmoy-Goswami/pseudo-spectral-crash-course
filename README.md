@@ -52,7 +52,9 @@ $ sudo make install
 ```
 </details>
 
-Lecture Video: [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/m_dle8vr3dU)
+Lecture Video: 
+
+[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/m_dle8vr3dU)
 
 
 ## Lecture 2: 
@@ -80,6 +82,8 @@ So, [here is yours!](https://www.youtube.com/watch?v=tFtpM-Evo90&list=PL04QVxpjc
 Happy coding!
 
 </details>
+
+Lecture Video: 
 
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/B0wgOq_ECpI)
 
