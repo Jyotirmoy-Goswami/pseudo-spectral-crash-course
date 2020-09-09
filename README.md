@@ -91,8 +91,27 @@ And eventually increase the amplitude of perturbation and see how does the plasm
 
 ## Lecture 4: 
 As promised, I solved the two dimensional Poisson solver using multi-dimensional FFTW library, but before that, I revised the numerical subtleties of multi-dimensional FFTW library that I described in the last lecture. The revision took almost half of the lecture and in the rest of the part I showed the numerical implementation as an extension of the program written in the last lecture. At the fag end I talked about some seminal benchmarking papers for two dimensional fluid codes!
+
+
 ## Lecture 5: 
 This is probably the most crucial lecture. Starting from last lecture's code, I developed a two dimensional incompressible fluid solver. In the first part I described the basic equaitons to be solved in the vorticity - stream-function formalism at length and then developed the code. Unfortunately, the code had a bug which I later identified and pointed out in the beginning of the next lecture.
+
+<details>
+<summary>Quizzes</summary> 
+    
+### Quiz - 3:
+[Ackermann function](https://en.wikipedia.org/wiki/Ackermann_function)
+
+<img src="https://render.githubusercontent.com/render/math?math=A(0,n) = (n%2B1)">
+
+<img src="https://render.githubusercontent.com/render/math?math=A(m%2B1,0) = A(m,1)">
+
+<img src="https://render.githubusercontent.com/render/math?math=A(m%2B1,n%2B1) = A(m,A(m%2B1,n))">
+
+Evaluate <img src="https://render.githubusercontent.com/render/math?math=A(3,11)"> and do NOT use *function* call.
+
+</details>
+
 ## Lecture 6: 
 There was an error in the code we were writing in the last lecture :smiley:. Well, I identified the error. 
 
