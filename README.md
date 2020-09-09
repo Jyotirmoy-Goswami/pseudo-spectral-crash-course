@@ -71,6 +71,7 @@ So, [here is yours!](https://www.youtube.com/watch?v=tFtpM-Evo90&list=PL04QVxpjc
 Happy coding!
 
 </details>
+
 ## Lecture 3: 
 Here I talked about the two dimensional form of the Navier-Stokes equation, its component-by-component decomposition into Cartesian basis, the vorticity - stream-function formalism for incompressible fluid and finally some tips on how to use the multi-dimensional FFTW library. As a prelude to pseudo-spectrally solve the two dimensional incompressible Navier-Stokes equation using multi-dimensional FFTW library, I first took a set of uniform random numbers as an input of a 2D array, took its Fourier transform and then took inverse Fourier transform to come back to the real space. If I get back the input array, it shows that we have learned using the multi-dimensional FFTW library perfectly! In the last part, I described a bit about the two dimensional Poisson solver using this freshly brewed code! The numerical example is solved in the next lecture.
 ## Lecture 4: 
