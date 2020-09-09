@@ -20,19 +20,35 @@ A series of lectures are available on youtube based on the materials archived in
 [![Webinar on "Pseudo Spectral Method"](http://img.youtube.com/vi/m_dle8vr3dU/0.jpg)](https://www.youtube.com/embed/videoseries?list=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
 # Lecture description
 ## Lecture 1: 
-To make a post-programming fun of my coding, you guys can go to Time = 1:41:33 of the first video link and see how the error entered into our code due to copy-paste from the previous line, which kept us bothering!:joy:
+In the first part of the lecture, I described some basic idea about different spectral methods, concept of basis function, projection of a function into different basis, accuracy of spectral methods over finite difference schemes, idea of spectral convergence. Further I chose one of the many available complete basis function (i.e. Fourier basis) and talked about pseudo-spectral method, specifically showing one example, named "Burgers equation". The analytical solution of this equation is [well documented](https://arxiv.org/pdf/nlin/0012033.pdf).
+
+In the last part of the lecture, I tried to numerically solve the one dimensional Burgers equation using pseudo-spectral method (for Fourier transforms I used [FFTW library](http://www.fftw.org/)) which failed.:joy: Before going into the pseudo-spectral method, I also described how to use the one dimensional Fourier transform using FFTW library.
+
+To make a post-programming fun of my coding, you can go to Time = 1:41:33 of the first video link and see how the error entered into our code due to copy-paste from the previous line, which kept us bothering!:joy:
 
 I was laughing, watching myself making the mistake. It is really funny and amusing. This is my life's first experience when, I can 'post-see' myself making a mistake.:laughing:
+
+Anyway, to take a look at what went wrong into our code, you can always check-out the (Part-2) of the Lecture 1!
 ## Lecture 2: 
-Yet to be updated
+In this lecture, I first delineated some basic properties of the Burgers equation and compared them with our freshly brewed "burgulence.f95" code (the one that we developed in the first lecture) and then described some basic idea about discontinuity (which will appear in the form of 'shock' in later part of this course) and how to capture that using our simple numerical techniques. Next I compare the algorithm mentioned in my slide with the code we developed in the last lecture. And then got drifted into turbulence, scaling, energy cascades etc. which I did not intend to cover.
 ## Lecture 3: 
-Yet to be updated
+Here I talked about the two dimensional form of the Navier-Stokes equation, its component-by-component decomposition into Cartesian basis, the vorticity - stream-function formalism for incompressible fluid and finally some tips on how to use the multi-dimensional FFTW library. As a prelude to pseudo-spectrally solve the two dimensional incompressible Navier-Stokes equation using multi-dimensional FFTW library, I first took a set of uniform random numbers as an input of a 2D array, took its Fourier transform and then took inverse Fourier transform to come back to the real space. If I get back the input array, it shows that we have learned using the multi-dimensional FFTW library perfectly! In the last part, I described a bit about the two dimensional Poisson solver using this freshly brewed code! The numerical example is solved in the next lecture.
 ## Lecture 4: 
-Yet to be updated
+As promised, I solved the two dimensional Poisson solver using multi-dimensional FFTW library, but before that, I revised the numerical subtleties of multi-dimensional FFTW library that I described in the last lecture. The revision took almost half of the lecture and in the rest of the part I showed the numerical implementation as an extension of the program written in the last lecture. At the fag end I talked about some seminal benchmarking papers for two dimensional fluid codes!
 ## Lecture 5: 
-Yet to be updated
+This is probably the most crucial lecture. Starting from last lecture's code, I developed a two dimensional incompressible fluid solver. In the first part I described the basic equaitons to be solved in the vorticity - stream-function formalism at length and then developed the code. Unfortunately, the code had a bug which I later identified and pointed out in the beginning of the next lecture.
 ## Lecture 6: 
-Yet to be updated
+There was an error in the code we were writing in the last lecture :smiley:. Well, I identified the error. 
+
+Look at **Line: 347** in the Subroutine *AdamsBashforth*.
+```
+    omegak_new(i,j) = omegak(Nh,Ny) + ..........
+```
+should be replaced as
+```
+    omegak_new(i,j) = omegak(i,j) + ...........
+```
+Afterwards, I talked about the basic idea of Kelvin-Helmholtz instability, how to capture it numerically (there are some subtleties here). Finally our baby-code performed well to reproduce the analytical growth rate calculated by P G Drazin and thus passed one very critical test! Then I mentioned some papers, talked about few interesting open problems that can be 'easily' attacked using our simple baby code and finally sketched some aspects of parallel computing that we will be covering in the rest of the course.
 ## Lecture 7 (Revision): 
 Yet to be updated
 ## Lecture 8: 
@@ -50,7 +66,14 @@ Yet to be updated
 # Resources and tips related to each lecture
 
 ## Lecture 1: 
-No resources Available
+Instruction for installing FFTW library:
+Download the latest version from [here](http://www.fftw.org/download.html)
+
+* cd path_to_file
+* sudo ./configure --enable-threads --enable-openmp --with-g77-wrappers
+* sudo make
+* sudo make install
+
 ## Lecture 2: 
 As mentioned, I add the link of Blackboard lectures by JKB and Rama Govindarajan.
 
@@ -72,16 +95,7 @@ Happy coding!
 ## Lecture 3: 
 No resources Available
 ## Lecture 4: 
-There was an error in the code we were writing today :smiley:. Well, I just identified the error. 
-
-Look at **Line: 347** in the Subroutine *AdamsBashforth*.
-```
-    omegak_new(i,j) = omegak(Nh,Ny) + ..........
-```
-should be replaced as
-```
-    omegak_new(i,j) = omegak(i,j) + ...........
-```
+No resources Available
 ## Lecture 5: 
 No resources Available
 ## Lecture 6: 
