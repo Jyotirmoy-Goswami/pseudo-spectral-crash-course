@@ -62,7 +62,7 @@ Follow-up lectures (Lecture 2,3,4 etc.) should be found in the upper-right-hand 
 
 And, and, and...
 
-Here you can find, how I am cheating you guys everyday.:wink: [And hopefully, in the next lecture also](https://www.youtube.com/watch?v=EOYJc2Vuju0&index=54&list=PL04QVxpjcnjhcA2iryoRvU86o939OrZSo&hd=1):shushing_face:
+Here you can find, how I am cheating you in every lecture.:wink: [And hopefully, in the next lecture also](https://www.youtube.com/watch?v=EOYJc2Vuju0&index=54&list=PL04QVxpjcnjhcA2iryoRvU86o939OrZSo&hd=1):shushing_face:
 
 Lastly, kudos to all of you, for your immense patience in my lousy discussions. Each of you really deserve at-least one candy!:yum:
 
@@ -72,7 +72,7 @@ Happy coding!
 ## Lecture 3: 
 No resources Available
 ## Lecture 4: 
-There was a error in the code we were writing today :smiley:. Well, I just identified the error. 
+There was an error in the code we were writing today :smiley:. Well, I just identified the error. 
 
 Look at **Line: 347** in the Subroutine *AdamsBashforth*.
 ```
@@ -86,7 +86,7 @@ should be replaced as
 No resources Available
 ## Lecture 6: 
 
-Regarding Aliasing and de-aliasing methods, I have explained in short in the next lecture (**Lecture 7**). But for a more detailed overview you can look at the following link:
+Regarding Aliasing and de-aliasing methods, I will explain in short in the next lecture (**Lecture 7**). But for a more detailed overview you can look at the following link:
 * https://en.wikipedia.org/wiki/Aliasing
 * https://www.astro.auth.gr/~vlahos/GravitoplasmaWS1/pseudo-spectral_2.pdf
 
