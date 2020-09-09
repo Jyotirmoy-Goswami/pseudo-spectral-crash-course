@@ -35,6 +35,7 @@ Anyway, to take a look at what went wrong into our code, you can always check-ou
 <details>
 <summary>Resources</summary>  
 Instruction for installing FFTW library:
+
 Download the latest version from [here](http://www.fftw.org/download.html)
 
 ```console
