@@ -29,6 +29,22 @@ To make a post-programming fun of my coding, you can go to Time = 1:41:33 of the
 I was laughing, watching myself making the mistake. It is really funny and amusing. This is my life's first experience when, I can 'post-see' myself making a mistake.:laughing:
 
 Anyway, to take a look at what went wrong into our code, you can always check-out the (Part-2) of the Lecture 1!
+
+
+
+<details><summary>Resources</summary>
+<p>
+Instruction for installing FFTW library:
+Download the latest version from [here](http://www.fftw.org/download.html)
+```console
+$ cd path_to_file
+$ sudo ./configure --enable-threads --enable-openmp --with-g77-wrappers
+$ sudo make
+$ sudo make install
+```
+</p>
+</details>
+
 ## Lecture 2: 
 In this lecture, I first delineated some basic properties of the Burgers equation and compared them with our freshly brewed "burgulence.f95" code (the one that we developed in the first lecture) and then described some basic idea about discontinuity (which will appear in the form of 'shock' in later part of this course) and how to capture that using our simple numerical techniques. Next I compare the algorithm mentioned in my slide with the code we developed in the last lecture. And then got drifted into turbulence, scaling, energy cascades etc. which I did not intend to cover.
 ## Lecture 3: 
@@ -51,6 +67,15 @@ should be replaced as
 Afterwards, I talked about the basic idea of Kelvin-Helmholtz instability, how to capture it numerically (there are some subtleties here). Finally our baby-code performed well to reproduce the analytical growth rate calculated by P G Drazin and thus passed one very critical test! Then I mentioned some papers, talked about few interesting open problems that can be 'easily' attacked using our simple baby code and finally sketched some aspects of parallel computing that we will be covering in the rest of the course.
 ## Lecture 7 (Revision): 
 I got a feedback that I am going too fast. Hence we decided to pause for a bit, put one full lecture for revision and then proceed for parallelization. So in this lecture, I talked again about the numerical aspects of capturing Kelvin-Helmholtz instability, analytical growth rate, numerical comparison, delineated a bit in to aliazing errors and went back into the lecture slide of the first lecture, compared our previous codes line-by-line with the algorithm described in the lecture slide and finally for the first time touched the aspects of three dimensional arrays.
+
+##### Extras
+In the middle of the week, I thought of sharing some 'funny' movies!
+https://w3.pppl.gov/~hammett/viz/viz.html
+You can watch the first two movies and find out what is/are the primary instability(s) occurring within the DIII-D tokamak!
+(DIII-D is just a name of a tokamak, somewhere in the west coast of USA, in case you have not heard about it earlier)
+
+And this takes me to [Quiz - 6](#quiz---6):
+
 ## Lecture 8: 
 Here I started with some 'funny' movies (both hydrodynamics and plasmas) and don't know how, got drifted towards my favourite stereographic projection and topology while talking about periodic boundary condition. Finally I could hold myself and came back to simulation discussions on bounded flows using spectral methods. In the second half of the lecture, I talked about basic ideas about multi-core and multi-node parallelization and its simple numerical implementations, explicitly showing how to parallelize "do-loops" for OpenMP and MPI architechtures.
 ## Lecture 9: 
@@ -68,12 +93,12 @@ The first part of this lecture extends over a set of previous lecture series on 
 ## Lecture 1: 
 Instruction for installing FFTW library:
 Download the latest version from [here](http://www.fftw.org/download.html)
-
-* cd path_to_file
-* sudo ./configure --enable-threads --enable-openmp --with-g77-wrappers
-* sudo make
-* sudo make install
-
+```console
+$ cd path_to_file
+$ sudo ./configure --enable-threads --enable-openmp --with-g77-wrappers
+$ sudo make
+$ sudo make install
+```
 ## Lecture 2: 
 As mentioned, I add the link of Blackboard lectures by JKB and Rama Govindarajan.
 
@@ -190,9 +215,9 @@ Since all of you now know, how to take 1D and 2D Fourier transforms, can you now
 
 ## Lecture 7:
 No Quiz
-### Quiz - 5: 
+### Quiz - 4 Solution: 
 Solution: derivative_3d_recipe.md
-### Quiz - 6: 
+### Quiz - 5: 
 Can you write down, what extra things we need to add in our 2dfft.f95 code, to simulate such a 'real-life' plasma in these funny movies described in [Extras](#extras)?
 
 ## Lecture 8: 
@@ -208,9 +233,9 @@ Also, further at the end, it will print your Quiz - 8!
 And finally what if, I send you a file and ask, what does [this program](https://github.com/RupakMukherjee/fluid_teaching/blob/master/3d_hybrid_poisson.f95) do?
 To compile and run this file, you may use the following command:
 ```console
-mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
+$ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
 ```
-### Quiz - 9: 
+### Quiz - 6: 
 Can you turn the code [3d_hybrid_poisson.f95] into a 3d hybrid Poisson solver?
 If you can solve Quiz - 9, this course is over!!!
 
@@ -218,7 +243,7 @@ If you can solve Quiz - 9, this course is over!!!
 No Quiz
 
 ## Lecture 12: 
-### Quiz - 10: 
+### Quiz - 7: 
 The 2D algorithm I described today for the tracer particles (interpolating from grid to particle position) had 4 if-conditions . Now check out the 'big' expression (https://arxiv.org/pdf/1810.12707.pdf, Page No 7, Section VI, A, at the bottom part of the page) and tell me how many if-conditions  you have to write for this case?
 
 # Code Reference
