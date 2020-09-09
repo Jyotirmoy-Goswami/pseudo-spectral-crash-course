@@ -18,7 +18,9 @@ A series of lectures are available on youtube based on the materials archived in
 [Webinar on "Pseudo Spectral Method"](https://www.youtube.com/playlist?list=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
 
 [![Webinar on "Pseudo Spectral Method"](http://img.youtube.com/vi/m_dle8vr3dU/0.jpg)](https://www.youtube.com/embed/videoseries?list=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
+
 # Lecture description
+
 ## Lecture 1: 
 In the first part of the lecture, I described some basic idea about different spectral methods, concept of basis function, projection of a function into different basis, accuracy of spectral methods over finite difference schemes, idea of spectral convergence. Further I chose one of the many available complete basis function (i.e. Fourier basis) and talked about pseudo-spectral method, specifically showing one example, named "Burgers equation". The analytical solution of this equation is [well documented](https://arxiv.org/pdf/nlin/0012033.pdf).
 
@@ -46,7 +48,7 @@ $ sudo make install
 ```
 </details>
 
-[![Youtube Link](yt_logo_rgb_light.png)](https://youtu.be/m_dle8vr3dU)
+[<img src="yt_logo_rgb_light.png" width="48">)](https://youtu.be/m_dle8vr3dU)
 
 
 ## Lecture 2: 
