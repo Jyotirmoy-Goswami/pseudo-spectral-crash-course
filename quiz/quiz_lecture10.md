@@ -6,7 +6,7 @@ Also, further at the end, it will print your Quiz - 8!
 And finally what if, I send you a file and ask, what does [this program](https://github.com/RupakMukherjee/fluid_teaching/blob/master/3d_hybrid_poisson.f95) do?
 To compile and run this file, you may use the following command:
 ```console
-$ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
+ $ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
 ```
 ### Quiz - 6: 
 Can you turn the code [hybrid_do.f95] into a 3d hybrid Poisson solver?
