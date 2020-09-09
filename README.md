@@ -250,6 +250,19 @@ Need inspiration? watch this,
 
 ## Lecture 9: 
 In this lecture I talked about MPI architechture in very detail explaining the bits as elaborately as possible. At the end, I just had re-done the single "do-loop" example that I outlined in the last lecture. 
+
+<details>
+    
+<summary>Resources</summary> 
+
+Here is a question cum hint for you to proceed for [Quiz - 1](#quiz---1):
+What is the dimension of x in the expression exp(x)?
+
+And here is a link of Davidson's book [Methods in Nonlinear Plasma Theory](https://books.google.no/books?id=8iW0MDOVr0oC&lpg=PP1&hl=no&pg=PP1#v=onepage&q&f=false). You may go to Chapter 3, Section 3.1, Page 33-34 and read-up a little.
+
+</details>
+
+
 ## Lecture 10: 
 Here I went to 2D arrays! Basically I extended the "do-loop" example I described in the last lecture for two dimensional arrays. This extension is crucial since we will need it when you will be parallelizing the code we wrote up in Lecture 5 and 6.
 ## Lecture 11: 
