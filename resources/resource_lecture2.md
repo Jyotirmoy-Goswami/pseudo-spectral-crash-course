@@ -1,6 +1,6 @@
 # Resources and tips related Lecture - 2
 
-As mentioned, I add the link of Blackboard lectures by JKB and Rama Govindarajan.
+As mentioned, I add the link of Blackboard lectures by Jayanta K. Bhattacharjee(JKB) and Rama Govindarajan.
 
 [Lecture 1 by JKB](https://www.youtube.com/watch?v=0JMeOwgQT-k&list=PL04QVxpjcnjhcA2iryoRvU86o939OrZSo&index=4)
 
