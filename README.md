@@ -265,6 +265,39 @@ And here is a link of Davidson's book [Methods in Nonlinear Plasma Theory](https
 
 ## Lecture 10: 
 Here I went to 2D arrays! Basically I extended the "do-loop" example I described in the last lecture for two dimensional arrays. This extension is crucial since we will need it when you will be parallelizing the code we wrote up in Lecture 5 and 6.
+
+<details>
+    
+<summary>Resources</summary> 
+
+Few resources to read:
+* https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-loop.html
+* http://users.metu.edu.tr/csert/me582/ME582%20Ch%2001.pdf
+
+</details>
+
+
+<details>
+<summary>Quizzes</summary> 
+I added some comments at the end of the program that we just wrote today. If you can run the program, it will print some comments those comments will give you some hint about, why for 2 nodes, it did not give us correct result.
+    
+Also, further at the end, it will print your Quiz - 8!
+
+And finally what if, I send you a file and ask, what does [this program](https://github.com/RupakMukherjee/fluid_teaching/blob/master/3d_hybrid_poisson.f95) do?
+To compile and run this file, you may use the following command:
+
+```console
+ $ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
+```
+
+### Quiz - 6: 
+Can you turn the code [hybrid_do.f95] into a 3d hybrid Poisson solver?
+If you can solve Quiz - 9, this course is over!!!
+
+</details>
+
+
+
 ## Lecture 11: 
 This is the most important lecture for you, if you want to get our code parallelized that we developed in Lecture 5 and 6. When I say 'parallelize', I mean both multi-core (OpenMP) and multi-node (MPI). After talking about how to parallelize nested "do-loops" in the last lecture, here I showed how to use the parallelized FFTW library. Thus at the end of the lecture, all of you become potentially capable to write an OpenMP and MPI parallel two dimensional incompressible Navier-Stokes equation solver! Start with the code we developed in Lecture 5 and 6. Make all the "do-loops" parallel using the prescription in Lecture 9 and replace all the FFTW calls using the prescription in Lecture 10. You are all set!!!
 ## Lecture 12: 
