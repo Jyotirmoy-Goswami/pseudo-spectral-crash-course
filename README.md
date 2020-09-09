@@ -232,8 +232,22 @@ Can you write down, what extra things we need to add in our 2dfft.f95 code, to s
 </details>
 
 
+
+
 ## Lecture 8: 
 Here I started with some 'funny' movies (both hydrodynamics and plasmas) and don't know how, got drifted towards my favourite stereographic projection and topology while talking about periodic boundary condition. Finally I could hold myself and came back to simulation discussions on bounded flows using spectral methods. In the second half of the lecture, I talked about basic ideas about multi-core and multi-node parallelization and its simple numerical implementations, explicitly showing how to parallelize "do-loops" for OpenMP and MPI architechtures.
+
+<details>
+    
+<summary>Resources</summary>  
+Need inspiration? watch this,
+
+[High Performance Computing /Parallel Computing](https://www.youtube.com/playlist?list=PLYwpaL_SFmcA1eJbqwvjKgsnT321hXRGx)
+
+</details>
+
+
+
 ## Lecture 9: 
 In this lecture I talked about MPI architechture in very detail explaining the bits as elaborately as possible. At the end, I just had re-done the single "do-loop" example that I outlined in the last lecture. 
 ## Lecture 10: 
