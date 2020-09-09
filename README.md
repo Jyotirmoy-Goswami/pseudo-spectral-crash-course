@@ -287,7 +287,7 @@ And finally what if, I send you a file and ask, what does [this program](https:/
 To compile and run this file, you may use the following command:
 
 ```console
- $ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
+$ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
 ```
 
 ### Quiz - 6: 
@@ -300,96 +300,10 @@ If you can solve Quiz - 9, this course is over!!!
 
 ## Lecture 11: 
 This is the most important lecture for you, if you want to get our code parallelized that we developed in Lecture 5 and 6. When I say 'parallelize', I mean both multi-core (OpenMP) and multi-node (MPI). After talking about how to parallelize nested "do-loops" in the last lecture, here I showed how to use the parallelized FFTW library. Thus at the end of the lecture, all of you become potentially capable to write an OpenMP and MPI parallel two dimensional incompressible Navier-Stokes equation solver! Start with the code we developed in Lecture 5 and 6. Make all the "do-loops" parallel using the prescription in Lecture 9 and replace all the FFTW calls using the prescription in Lecture 10. You are all set!!!
-## Lecture 12: 
-The first part of this lecture extends over a set of previous lecture series on molecular-dynamics simulation and then smoothly connects to "smooth particle hydrodynamics" and enters into the pseudo-spectral code we developed in Lecture 5 and 6. Finally I talked about adding some passive tracer particles delineating some crude and very basic idea about particle-in-cell algorithm and particle pusher schemes we used in the molecular-dynamics simulation series lecture. In between the lecture I also have stressed the need of the implementation of this scheme and its potential applications!
 
-
-# Resources and tips related to each lecture
-
-## Lecture 1: 
-Instruction for installing FFTW library:
-Download the latest version from [here](http://www.fftw.org/download.html)
-```console
-$ cd path_to_file
-$ sudo ./configure --enable-threads --enable-openmp --with-g77-wrappers
-$ sudo make
-$ sudo make install
-```
-## Lecture 2: 
-As mentioned, I add the link of Blackboard lectures by JKB and Rama Govindarajan.
-
-[Lecture 1 by JKB](https://www.youtube.com/watch?v=0JMeOwgQT-k&list=PL04QVxpjcnjhcA2iryoRvU86o939OrZSo&index=4)
-
-[Lecture 1 by Rama Govindarajan](https://www.youtube.com/watch?v=-zbwHOXiLzc&list=PL04QVxpjcnjhcA2iryoRvU86o939OrZSo&index=6)
-
-Follow-up lectures (Lecture 2,3,4 etc.) should be found in the upper-right-hand corner.
-
-And, and, and...
-
-Here you can find, how I am cheating you in every lecture.:wink: [And hopefully, in the next lecture also](https://www.youtube.com/watch?v=EOYJc2Vuju0&index=54&list=PL04QVxpjcnjhcA2iryoRvU86o939OrZSo&hd=1):shushing_face:
-
-Lastly, kudos to all of you, for your immense patience in my lousy discussions. Each of you really deserve at-least one candy!:yum:
-
-So, [here is yours!](https://www.youtube.com/watch?v=tFtpM-Evo90&list=PL04QVxpjcnjhcA2iryoRvU86o939OrZSo&index=37)
-
-Happy coding!
-## Lecture 3: 
-No resources Available
-## Lecture 4: 
-No resources Available
-## Lecture 5: 
-No resources Available
-## Lecture 6: 
-
-Regarding Aliasing and de-aliasing methods, I will explain in short in the next lecture (**Lecture 7**). But for a more detailed overview you can look at the following link:
-* https://en.wikipedia.org/wiki/Aliasing
-* https://www.astro.auth.gr/~vlahos/GravitoplasmaWS1/pseudo-spectral_2.pdf
-
-### Resources:
-* https://arxiv.org/abs/1711.10865
-* https://doi.org/10.1073/pnas.1509304112
-* https://doi.org/10.1103/PhysRevLett.75.2486
-* https://doi.org/10.1017/S0022112061000378
-* https://doi.org/10.1088/1742-6596/1548/1/012037
-
-## Lecture 7: 
-Following are few papers on simulating bounded flows via pseudo-spectral method. May be we can have a bit of discussion sometime later on such simulations, since flows in bounded domains are the most natural systems. Also, you guys can try to implement the technique in the 2D code that all of us together wrote few weeks ago! You can also search independently about such methods. One helpful google-search key may be - "Volume penalization method".
-
-One other option to simulate boundaries / bounded flows, within pseudo-spectral scheme is - instead of using the Fourier transform, one can use sine-Fourier or cosine-Fourier transforms while taking the derivatives. Such libraries are easily available within the FFTW architecture but I had a hard time in the implementation process. May be, young blood can rejuvenate the endeavor!!!
-### Resources:
-* http://dx.doi.org/10.1016/j.jcp.2014.05.038
-* https://doi.org/10.1016/j.cpc.2010.05.019
-* https://doi.org/10.1016/j.compfluid.2004.09.006
-
-You can get some funny videos on turbulence (some of which you can now simulate now using the 2dfft.f95 code) here.
-https://www.youtube.com/watch?v=5zI9sG3pjVU
-
-And here is one more link (http://www.lcs-fast.com/fifth_order/) that shows some spectral simulation of air flows around a racing-car. But note that these are not pseudo-spectral. The basic idea is same though. The only difference is, instead of Fourier basis, they have used Legendre or Chebyshev basis (and sometimes Hermite also!) for better accuracy! If you are feeling confused, revise our first discussion and specifically look at the first slide!
-##### Extras
-In the middle of the week, I thought of sharing some 'funny' movies!
-https://w3.pppl.gov/~hammett/viz/viz.html
-You can watch the first two movies and find out what is/are the primary instability(s) occurring within the DIII-D tokamak!
-(DIII-D is just a name of a tokamak, somewhere in the west coast of USA, in case you have not heard about it earlier)
-
-And this takes me to [Quiz - 6](#quiz---6):
-
-## Lecture 8: 
-Need inspiration? watch this,
-[High Performance Computing /Parallel Computing](https://www.youtube.com/playlist?list=PLYwpaL_SFmcA1eJbqwvjKgsnT321hXRGx)
-## Lecture 9: 
-
-Here is a question cum hint for you to proceed for [Quiz - 1](#quiz---1):
-What is the dimension of x in the expression exp(x)?
-
-And here is a link of Davidson's book [Methods in Nonlinear Plasma Theory](https://books.google.no/books?id=8iW0MDOVr0oC&lpg=PP1&hl=no&pg=PP1#v=onepage&q&f=false). You may go to Chapter 3, Section 3.1, Page 33-34 and read-up a little.
-
-## Lecture 10: 
-
-
-* https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-loop.html
-* http://users.metu.edu.tr/csert/me582/ME582%20Ch%2001.pdf
-
-## Lecture 11: 
+<details>
+    
+<summary>Resources</summary> 
 
 Here is a nice link from where, I learnt OpenMP first. May be you guys also will like:
 * https://chryswoods.com/beginning_openmp/index.html
@@ -397,70 +311,25 @@ Here is a nice link from where, I learnt OpenMP first. May be you guys also will
 And here is his general course link:
 * https://chryswoods.com/main/courses.html
 
-## Lecture 12: 
+</details>
 
-
-# Quizzes 
-
-## Lecture 1: 
-No Quiz
-## Lecture 2: 
-No Quiz
-## Lecture 3: 
-### Quiz - 1: 
-Can you modify the 1D Burgers code, and reproduce electron-plasma-oscillation? (Hint: Look at the plasma oscillation section of Davidson's book)
-### Quiz - 2: 
-And eventually increase the amplitude of perturbation and see how does the plasma frequency changes as nonlinearity enters via large amplitude perturbation. Remember, our code successfully passed one of the most difficult tests of nonlinearity - the shock problem!!!
-## Lecture 4: 
-No Quiz
-## Lecture 5: 
-### Quiz - 3:
-[Ackermann function](https://en.wikipedia.org/wiki/Ackermann_function)
-
-<img src="https://render.githubusercontent.com/render/math?math=A(0,n) = (n%2B1)">
-
-<img src="https://render.githubusercontent.com/render/math?math=A(m%2B1,0) = A(m,1)">
-
-<img src="https://render.githubusercontent.com/render/math?math=A(m%2B1,n%2B1) = A(m,A(m%2B1,n))">
-
-Evaluate A(3,11) and do NOT use *function* call.
-
-## Lecture 6: 
-### Quiz - 4: 
-Since all of you now know, how to take 1D and 2D Fourier transforms, can you now create a 3D array and take its Fourier transform and then inverse Fourier transform and check whether you get back the input 3D array?
-
-## Lecture 7:
-No Quiz
-### Quiz - 4 Solution: 
-Solution: derivative_3d_recipe.md
-### Quiz - 5: 
-Can you write down, what extra things we need to add in our 2dfft.f95 code, to simulate such a 'real-life' plasma in these funny movies described in [Extras](#extras)?
-
-## Lecture 8: 
-No Quiz
-## Lecture 9: 
-No Quiz
-
-## Lecture 10: 
-
-I added some comments at the end of the program that we just wrote today. If you can run the program, it will print some comments those comments will give you some hint about, why for 2 nodes, it did not give us correct result.
-Also, further at the end, it will print your Quiz - 8!
-
-And finally what if, I send you a file and ask, what does [this program](https://github.com/RupakMukherjee/fluid_teaching/blob/master/3d_hybrid_poisson.f95) do?
-To compile and run this file, you may use the following command:
-```console
-$ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
-```
-### Quiz - 6: 
-Can you turn the code [3d_hybrid_poisson.f95] into a 3d hybrid Poisson solver?
-If you can solve Quiz - 9, this course is over!!!
-
-## Lecture 11: 
-No Quiz
 
 ## Lecture 12: 
+The first part of this lecture extends over a set of previous lecture series on molecular-dynamics simulation and then smoothly connects to "smooth particle hydrodynamics" and enters into the pseudo-spectral code we developed in Lecture 5 and 6. Finally I talked about adding some passive tracer particles delineating some crude and very basic idea about particle-in-cell algorithm and particle pusher schemes we used in the molecular-dynamics simulation series lecture. In between the lecture I also have stressed the need of the implementation of this scheme and its potential applications!
+
+
+<details>
+    
+<summary>Quizzes</summary> 
+
 ### Quiz - 7: 
+
 The 2D algorithm I described today for the tracer particles (interpolating from grid to particle position) had 4 if-conditions . Now check out the 'big' expression (https://arxiv.org/pdf/1810.12707.pdf, Page No 7, Section VI, A, at the bottom part of the page) and tell me how many if-conditions  you have to write for this case?
+
+</details>
+
+
+
 
 # Code Reference
 The name of the codes/programs have been modified to recognize the pupose of the codes easily. The names used in the lectures can be found from the following table:
