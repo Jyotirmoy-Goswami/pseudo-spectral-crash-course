@@ -16,7 +16,7 @@ We have described pseudo-spectral method for spatial discretization. The equatio
 
 The wave-form is assumed to be <img src="https://render.githubusercontent.com/render/math?math=\exp(i(kx-wt))">. Hence derivative w.r.t. x gives ik only (and NOT -ik).
 
-A series of lectures ([Hinglish](https://en.wikipedia.org/wiki/Hinglish)) are available on youtube based on the materials archived in this repository. Click on the link provided below to access the lectures.
+A series of lectures (in [Hinglish](https://en.wikipedia.org/wiki/Hinglish)) are available on youtube based on the materials archived in this repository. Click on the link provided below to access the lectures.
 
 
 [Webinar on "Pseudo Spectral Method"](https://www.youtube.com/playlist?list=PLbX_ZyxeXxSJXnIAnkhhAsIAV-Ld0Awsu)
