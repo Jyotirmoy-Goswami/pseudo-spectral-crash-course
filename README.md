@@ -52,7 +52,7 @@ $ sudo make install
 ```
 </details>
 
-[<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/m_dle8vr3dU)
+Lecture Video: [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/m_dle8vr3dU)
 
 
 ## Lecture 2: 
