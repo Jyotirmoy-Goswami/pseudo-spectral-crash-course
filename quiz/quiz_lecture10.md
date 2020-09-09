@@ -8,7 +8,7 @@ To compile and run this file, you may use the following command:
 ```console
 $ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
 ```
-### Quiz - 9: 
+### Quiz - 6: 
 Can you turn the code [hybrid_do.f95] into a 3d hybrid Poisson solver?
 If you can solve Quiz - 9, this course is over!!!
 
