@@ -128,6 +128,71 @@ should be replaced as
     omegak_new(i,j) = omegak(i,j) + ...........
 ```
 Afterwards, I talked about the basic idea of Kelvin-Helmholtz instability, how to capture it numerically (there are some subtleties here). Finally our baby-code performed well to reproduce the analytical growth rate calculated by P G Drazin and thus passed one very critical test! Then I mentioned some papers, talked about few interesting open problems that can be 'easily' attacked using our simple baby code and finally sketched some aspects of parallel computing that we will be covering in the rest of the course.
+
+
+<details>
+<summary>Resources</summary> 
+    
+Regarding Aliasing and de-aliasing methods, I will explain in short in the next lecture (**Lecture 7**). But for a more detailed overview you can look at the following link:
+* https://en.wikipedia.org/wiki/Aliasing
+* https://www.astro.auth.gr/~vlahos/GravitoplasmaWS1/pseudo-spectral_2.pdf
+
+### Resources:
+* https://arxiv.org/abs/1711.10865
+* https://doi.org/10.1073/pnas.1509304112
+* https://doi.org/10.1103/PhysRevLett.75.2486
+* https://doi.org/10.1017/S0022112061000378
+* https://doi.org/10.1088/1742-6596/1548/1/012037
+
+</details>
+
+
+<details>
+<summary>Quizzes</summary> 
+    
+### Quiz - 4: 
+Since all of you now know, how to take 1D and 2D Fourier transforms, can you now create a 3D array and take its Fourier transform and then inverse Fourier transform and check whether you get back the input 3D array?
+
+Hint:
+
+```fortran
+do i = 1,Nh
+  kx = 2.0d0*pi*dfloat(i-1)/Lx
+  do j = 1,Ny/2
+    ky = 2.0d0*pi*dfloat(j-1)/Ly
+    do k = 1,Nz/2
+      kz = 2.0d0*pi*dfloat(k-1)/Lz 
+      i_kx_omegak(i,j,k) = (0.0d0,1.0d0) * kx * omegak(i,j,k)
+      i_ky_omegak(i,j,k) = (0.0d0,1.0d0) * ky * omegak(i,j,k)
+      i_kz_omegak(i,j,k) = (0.0d0,1.0d0) * kz * omegak(i,j,k)      
+    enddo
+    do k = Nz/2+1,Nz
+      kz = 2.0d0*pi*(dfloat(k-1)-Nz)/Lz
+      i_kx_omegak(i,j,k) = (0.0d0,1.0d0) * kx * omegak(i,j,k)
+      i_ky_omegak(i,j,k) = (0.0d0,1.0d0) * ky * omegak(i,j,k)
+      i_kz_omegak(i,j,k) = (0.0d0,1.0d0) * kz * omegak(i,j,k)             
+    enddo    
+  do j = Ny/2+1,Ny
+     ky = 2.0d0*pi*(dfloat(j-1)-Ny)/Ly
+    do k = 1,Nz/2
+      kz = 2.0d0*pi*dfloat(k-1)/Lz 
+      i_kx_omegak(i,j,k) = (0.0d0,1.0d0) * kx * omegak(i,j,k)
+      i_ky_omegak(i,j,k) = (0.0d0,1.0d0) * ky * omegak(i,j,k)
+      i_kz_omegak(i,j,k) = (0.0d0,1.0d0) * kz * omegak(i,j,k)      
+    enddo
+    do k =  Nz/2+1,Nz
+      kz = 2.0d0*pi*(dfloat(k-1)-Nz)/Lz
+      i_kx_omegak(i,j,k) = (0.0d0,1.0d0) * kx * omegak(i,j,k)
+      i_ky_omegak(i,j,k) = (0.0d0,1.0d0) * ky * omegak(i,j,k)
+      i_kz_omegak(i,j,k) = (0.0d0,1.0d0) * kz * omegak(i,j,k)             
+    enddo     
+  enddo
+enddo
+```
+
+</details>
+
+
 ## Lecture 7 (Revision): 
 I got a feedback that I am going too fast. Hence we decided to pause for a bit, put one full lecture for revision and then proceed for parallelization. So in this lecture, I talked again about the numerical aspects of capturing Kelvin-Helmholtz instability, analytical growth rate, numerical comparison, delineated a bit in to aliazing errors and went back into the lecture slide of the first lecture, compared our previous codes line-by-line with the algorithm described in the lecture slide and finally for the first time touched the aspects of three dimensional arrays.
 
