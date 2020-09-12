@@ -58,7 +58,7 @@ Lecture Video:
 
 
 ## Lecture 2: 
-In this lecture, I first delineated some basic properties of the Burgers equation and compared them with our freshly brewed "burgulence.f95" code (the one that we developed in the first lecture) and then described some basic idea about discontinuity (which will appear in the form of 'shock' in later part of this course) and how to capture that using our simple numerical techniques. Next I compare the algorithm mentioned in my slide with the code we developed in the last lecture. And then got drifted into turbulence, scaling, energy cascades etc. which I did not intend to cover.
+In this lecture, I first delineated some basic properties of the Burgers equation and compared them with our freshly brewed "[burgulence.f95](burgulence.f95)" code (the one that we developed in the first lecture) and then described some basic idea about discontinuity (which will appear in the form of 'shock' in later part of this course) and how to capture that using our simple numerical techniques. Next I compare the algorithm mentioned in my slide with the code we developed in the last lecture. And then got drifted into turbulence, scaling, energy cascades etc. which I did not intend to cover.
 
 <details>
 <summary>Resources</summary>  
