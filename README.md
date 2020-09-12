@@ -324,11 +324,11 @@ I added some comments at the end of the program that we just wrote today. If you
     
 Also, further at the end, it will print your Quiz - 8!
 
-And finally what if, I send you a file and ask, what does [this program](https://github.com/RupakMukherjee/fluid_teaching/blob/master/3d_hybrid_poisson.f95) do?
+And finally what if, I send you a file and ask, what does [this program](https://github.com/RupakMukherjee/fluid_teaching/blob/master/poisson_3d_hybrid.f95) do?
 To compile and run this file, you may use the following command:
 
 ```console
-$ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
+$ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib poisson_3d_hybrid.f95 -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 3 ./a.out
 ```
 
 ### Quiz - 6: 
