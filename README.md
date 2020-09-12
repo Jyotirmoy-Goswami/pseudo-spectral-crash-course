@@ -31,7 +31,7 @@ In the first part of the lecture, I described some basic idea about different sp
 
 In the last part of the lecture, I tried to numerically solve the one dimensional Burgers equation using pseudo-spectral method (for Fourier transforms I used [FFTW library](http://www.fftw.org/)) which failed.:joy: Before going into the pseudo-spectral method, I also described how to use the one dimensional Fourier transform using FFTW library.
 
-To make a post-programming fun of my coding, you can go to Time = 1:41:33 of the first video link and see how the error entered into our code due to copy-paste from the previous line, which kept us bothering!:joy:
+To make a post-programming fun of my coding, you can go to [Time = 1:41:33](https://youtu.be/m_dle8vr3dU?t=6093) of the first video link and see how the error entered into our code due to copy-paste from the previous line, which kept us bothering!:joy:
 
 I was laughing, watching myself making the mistake. It is really funny and amusing. This is my life's first experience when, I can 'post-see' myself making a mistake.:laughing:
 
