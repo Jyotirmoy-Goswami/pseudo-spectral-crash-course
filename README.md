@@ -385,7 +385,7 @@ Lecture Video:
 # Code Reference
 The name of the codes/programs have been modified to recognize the pupose of the codes easily. The names used in the lectures can be found from the following table:
 
-Lecture | Code Name | Original Name | Code Name | Original Name 
+Lecture | GitHub Code Name | Original Name | GitHub Code Name | Original Name 
 ------- | --------- | ------------- | --------- | -------------
 Lecture 1 | [fftw_1d.f95](fftw_1d.f95) | test.f95 | [fluid_1d.f95](fluid_1d.f95) | test_1.f95
 Lecture 2 | [fourier_transform.f95](fourier_transform.f95) | fourier.f95 | [fluid_1d.f95](fluid_1d.f95) | test_1.f95
