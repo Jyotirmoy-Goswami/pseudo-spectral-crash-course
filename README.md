@@ -1,10 +1,12 @@
 Solving PDEs by Pseudo Spectral Method
 ===============================================
 A repository of teaching numerical algorithms for solving fluid equations. The lectures slides can be found [here](PseudoSpectralTeachingSlides.pdf).
+
 ----------- |-----------------------
 Instructor: | [Dr. Rupak Mukherjee](https://github.com/RupakMukherjee)
 
 Contributor: | [Dr. Sayan Adhikari](https://github.com/sayanadhikari)
+
 
 We have described pseudo-spectral method for spatial discretization. The equations solved in this lecture series are two dimensional incompressible fluid equations in vorticity (<img src="https://render.githubusercontent.com/render/math?math=\omega">) - stream function (<img src="https://render.githubusercontent.com/render/math?math=\psi">) formalism.
 
