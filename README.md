@@ -35,7 +35,7 @@ To make a post-programming fun of my coding, you can go to [Time = 1:41:33](http
 
 I was laughing, watching myself making the mistake. It is really funny and amusing. This is my life's first experience when, I can 'post-see' myself making a mistake.:laughing:
 
-Anyway, to take a look at what went wrong into our code, you can always check-out the (Part-2) of the Lecture 1!
+Anyway, to take a look at what went wrong into our code, you can always check-out the ([Part-2](https://youtu.be/VDcAC_IW8s4)) of the Lecture 1!
 
 
 
