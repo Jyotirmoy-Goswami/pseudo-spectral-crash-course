@@ -94,7 +94,7 @@ Here I talked about the two dimensional form of the Navier-Stokes equation, its 
 <summary>Quizzes</summary> 
     
 ### Quiz - 1: 
-Can you modify the 1D Burgers code, and reproduce electron-plasma-oscillation? 
+Can you modify the [1D Burgers code](burgulence.f95), and reproduce electron-plasma-oscillation? 
 
 (Hint: Look at the plasma oscillation section of Davidson's book)
 
@@ -115,7 +115,7 @@ Lecture Video:
 [<img src="yt_logo_rgb_light.png" width="100">](https://youtu.be/zDAMAdWk0DM)
 
 ## Lecture 5: 
-This is probably the most crucial lecture. Starting from last lecture's code, I developed a two dimensional incompressible fluid solver. In the first part I described the basic equaitons to be solved in the vorticity - stream-function formalism at length and then developed the code. Unfortunately, the code had a bug which I later identified and pointed out in the beginning of the next lecture.
+This is probably the most crucial lecture. Starting from last [lecture's code](poisson_2d.f95), I developed a two dimensional incompressible fluid solver. In the first part I described the basic equaitons to be solved in the vorticity - stream-function formalism at length and then developed the code. Unfortunately, the code had a bug which I later identified and pointed out in the beginning of the next lecture.
 
 <details>
 <summary>Quizzes</summary> 
@@ -331,7 +331,7 @@ $ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib 3d_hybrid_poisson.f95 -l
 ```
 
 ### Quiz - 6: 
-Can you turn the code [hybrid_do.f95] into a 3d hybrid Poisson solver?
+Can you turn the code "[hybrid_do.f95]"(hybrid_do.f95) into a 3d hybrid Poisson solver?
 If you can solve Quiz - 9, this course is over!!!
 
 </details>
@@ -343,7 +343,7 @@ Lecture Video:
 
 
 ## Lecture 11: 
-This is the most important lecture for you, if you want to get our code parallelized that we developed in Lecture 5 and 6. When I say 'parallelize', I mean both multi-core (OpenMP) and multi-node (MPI). After talking about how to parallelize nested "do-loops" in the last lecture, here I showed how to use the parallelized FFTW library. Thus at the end of the lecture, all of you become potentially capable to write an OpenMP and MPI parallel two dimensional incompressible Navier-Stokes equation solver! Start with the code we developed in Lecture 5 and 6. Make all the "do-loops" parallel using the prescription in Lecture 9 and replace all the FFTW calls using the prescription in Lecture 10. You are all set!!!
+This is the most important lecture for you, if you want to get our code parallelized that we developed in Lecture 5 and 6. When I say 'parallelize', I mean both multi-core (OpenMP) and multi-node (MPI). After talking about how to parallelize nested "do-loops" in the last lecture, here I showed how to use the parallelized FFTW library. Thus at the end of the lecture, all of you become potentially capable to write an OpenMP and MPI parallel two dimensional incompressible Navier-Stokes equation solver! Start with the code we developed in [Lecture 5](#lecture-5) and [6](#lecture-6). Make all the "do-loops" parallel using the prescription in [Lecture 9](#lecture-9) and replace all the FFTW calls using the prescription in [Lecture 10](#lecture-10). You are all set!!!
 
 <details>
     
@@ -363,7 +363,7 @@ Lecture Video:
 
 
 ## Lecture 12: 
-The first part of this lecture extends over a set of previous lecture series on molecular-dynamics simulation and then smoothly connects to "smooth particle hydrodynamics" and enters into the pseudo-spectral code we developed in Lecture 5 and 6. Finally I talked about adding some passive tracer particles delineating some crude and very basic idea about particle-in-cell algorithm and particle pusher schemes we used in the molecular-dynamics simulation series lecture. In between the lecture I also have stressed the need of the implementation of this scheme and its potential applications!
+The first part of this lecture extends over a set of previous lecture series on molecular-dynamics simulation and then smoothly connects to "smooth particle hydrodynamics" and enters into the pseudo-spectral code we developed in [Lecture 5](#lecture-5) and [6](#lecture-6). Finally I talked about adding some passive tracer particles delineating some crude and very basic idea about particle-in-cell algorithm and particle pusher schemes we used in the molecular-dynamics simulation series lecture. In between the lecture I also have stressed the need of the implementation of this scheme and its potential applications!
 
 
 <details>
@@ -386,18 +386,18 @@ The name of the codes/programs have been modified to recognize the pupose of the
 
 Lecture | Code Name | Original Name | Code Name | Original Name 
 ------- | --------- | ------------- | --------- | -------------
-Lecture 1 | fftw_1d.f95 | test.f95 | burgulence.f95 | test_1.f95
-Lecture 2 | fourier_transform.f95 | fourier.f95 | burgulence.f95 | test_1.f95
-Lecture 3 | fftw_2d.f95 | 2d_fft.f95
-Lecture 4 | poisson_2d.f95 | 2d_fft.f95
-Lecture 5 | fluid_2d.f95 | 2d_fft.f95
-Lecture 6 | fluid_2d.f95 | 2d_fft.f95
+Lecture 1 | [fftw_1d.f95](fftw_1d.f95) | test.f95 | burgulence.f95 | test_1.f95
+Lecture 2 | [fourier_transform.f95](fourier_transform.f95) | fourier.f95 | burgulence.f95 | test_1.f95
+Lecture 3 | [fftw_2d.f95](fftw_2d.f95) | 2d_fft.f95
+Lecture 4 | [poisson_2d.f95](poisson_2d.f95) | 2d_fft.f95
+Lecture 5 | [fluid_2d.f95](fluid_2d.f95) | 2d_fft.f95
+Lecture 6 | [fluid_2d.f95](fluid_2d.f95) | 2d_fft.f95
 Lecture 7 |
-Lecture 8 | omp_do.f95 | omp.f95 | omp_nested_do.f95 | omp.f95
-Lecture 9 | mpi_do.f95 | mpi.f95
-Lecture 10| mpi_nested_do.f95 | mpi.f95 | hybrid_do.f95 | hybrid.f95
-Lecture 11| fftw_omp.f95 | 2d_fft.f95 | fftw_mpi.f95 | 2d_fft.f95
-Lecture 12| fluid_2d_with_tracers.f95 | 2d_fft.f95
+Lecture 8 | [omp_do.f95](omp_do.f95) | omp.f95 | omp_nested_do.f95 | omp.f95
+Lecture 9 | [mpi_do.f95](mpi_do.f95) | mpi.f95
+Lecture 10| [mpi_nested_do.f95](mpi_nested_do.f95) | mpi.f95 | hybrid_do.f95 | hybrid.f95
+Lecture 11| [fftw_omp.f95](fftw_omp.f95) | 2d_fft.f95 | fftw_mpi.f95 | 2d_fft.f95
+Lecture 12| [fluid_2d_with_tracers.f95](fluid_2d_with_tracers.f95) | 2d_fft.f95
 
 # Code Description
 ## fftw_1d.f95: 
