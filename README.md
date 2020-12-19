@@ -463,3 +463,7 @@ mpif90 -I/usr/local/include -L/usr/local/lib <program_name.f95> -lfftw3_mpi -lff
 ```console
 mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib <program_name.f95> -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun -quiet -np 4 ./a.out
 ```
+#### Hybrid FFTW compilation and running with hyperthreads in macOS
+```console
+mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib <program_name.f95> -lfftw3_mpi -lfftw3_omp -lfftw3 -lm; mpirun --use-hwthread-cpus ./a.out
+```
