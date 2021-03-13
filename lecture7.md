@@ -1,1 +1,2 @@
-
+# Lecture 7 (Revision): 
+I got a feedback that I am going too fast. Hence we decided to pause for a bit, put one full lecture for revision and then proceed for parallelization. So in this lecture, I talked again about the numerical aspects of capturing Kelvin-Helmholtz instability, analytical growth rate, numerical comparison, delineated a bit in to aliazing errors and went back into the lecture slide of the first lecture, compared our previous codes line-by-line with the algorithm described in the lecture slide and finally for the first time touched the aspects of three dimensional arrays.
