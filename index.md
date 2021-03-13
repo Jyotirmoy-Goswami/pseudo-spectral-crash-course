@@ -33,6 +33,7 @@ None      | None      | [Quiz](quiz/quiz_lecture3.md)      | None      | [Quiz](
 None      | None      | None      | None      | None      | None      
 [YouTube](https://youtu.be/m_dle8vr3dU)      | [YouTube](https://youtu.be/B0wgOq_ECpI)      | [YouTube](https://youtu.be/AS2ubgAKW80)      | [YouTube](https://youtu.be/zDAMAdWk0DM)      | [YouTube](https://youtu.be/Jd86s2-8Zi0)      | [YouTube](https://youtu.be/XTalV2kUDPA)      
 
+<br/><br/>
 
 [Lecture 7](lecture7.md) | [Lecture 8](lecture8.md) | [Lecture 9](lecture9.md) | [Lecture 10](lecture10.md) | [Lecture 11](lecture11.md) | [Lecture 12](lecture12.md)
 ------------ | ------------- | ------------ | ------------- | ------------ | ------------- 
