@@ -28,9 +28,9 @@ A series of lectures (in [Hinglish](https://en.wikipedia.org/wiki/Hinglish)) are
 
 [Lecture 1](lecture1.md) | [Lecture 2](lecture2.md) | [Lecture 3](lecture3.md) | [Lecture 4](lecture4.md) | [Lecture 5](lecture5.md) | [Lecture 6](lecture6.md) | [Lecture 7](lecture7.md) | [Lecture 8](lecture8.md) | [Lecture 9](lecture9.md) | [Lecture 10](lecture10.md) | [Lecture 11](lecture11.md) | [Lecture 12](lecture12.md)
 ------------ | ------------- | ------------ | ------------- | ------------ | ------------- | ------------ | ------------- | ------------ | ------------- | ------------ | ------------- 
-[Resources](resources/resource_lecture1.md) | [Resources] | None      | None      | None      | [Resources] | [Resources] | [Resources] | [Resources] | [Resources]  | [Resources]  | None
-None      | None      | [Quiz]      | None      | [Quiz]      | [Quiz]      | [Quiz]      | None      | None      | [Quiz]       | None       | [Quiz]
-None      | None      | None      | None      | None      | None      | [Extra]     | None      | None      | None       | None       | None
+[Resources](resources/resource_lecture1.md) | [Resources](resources/resource_lecture2.md) | None      | None      | None      | [Resources](resources/resource_lecture6.md) | [Resources](resources/resource_lecture7.md) | [Resources](resources/resource_lecture8.md) | [Resources](resources/resource_lecture9.md) | [Resources](resources/resource_lecture10.md)  | [Resources](resources/resource_lecture11.md)  | None
+None      | None      | [Quiz](quiz/quiz_lecture3.md)      | None      | [Quiz](quiz/quiz_lecture5.md)      | [Quiz](quiz/quiz_lecture6.md)      | [Quiz](quiz/quiz_lecture7.md)      | None      | None      | [Quiz](quiz/quiz_lecture10.md)       | None       | [Quiz](quiz/quiz_lecture12.md)
+None      | None      | None      | None      | None      | None      | [Extra](extra/extra_lecture7.md)     | None      | None      | None       | None       | None
 
           
 ## Lecture 1: 
