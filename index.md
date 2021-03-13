@@ -26,11 +26,11 @@ A series of lectures (in [Hinglish](https://en.wikipedia.org/wiki/Hinglish)) are
 
 # Lecture description
 
-Lecture 1 | Lecture 2 | Lecture 3 | Lecture 4 | Lecture 5 | Lecture 6 | Lecture 7 | Lecture 8 | Lecture 9 | Lecture 10 | Lecture 11 | Lecture 12
+[Lecture 1](lecture1.md) | [Lecture 2](lecture2.md) | [Lecture 3](lecture3.md) | [Lecture 4](lecture4.md) | [Lecture 5](lecture5.md) | [Lecture 6](lecture6.md) | [Lecture 7](lecture7.md) | [Lecture 8](lecture8.md) | [Lecture 9](lecture9.md) | [Lecture 10](lecture10.md) | [Lecture 11](lecture11.md) | [Lecture 12](lecture12.md)
 ------------ | ------------- | ------------ | ------------- | ------------ | ------------- | ------------ | ------------- | ------------ | ------------- | ------------ | ------------- 
-Resources | Resources | None      | None      | None      | Resources | Resources | Resources | Resources | Resources  | Resources  | None
-None      | None      | Quiz      | None      | Quiz      | Quiz      | Quiz      | None      | None      | Quiz       | None       | Quiz
-None      | None      | None      | None      | None      | None      | Extra     | None      | None      | None       | None       | None
+[Resources] | [Resources] | None      | None      | None      | [Resources] | [Resources] | [Resources] | [Resources] | [Resources]  | [Resources]  | None
+None      | None      | [Quiz]      | None      | [Quiz]      | [Quiz]      | [Quiz]      | None      | None      | [Quiz]       | None       | [Quiz]
+None      | None      | None      | None      | None      | None      | [Extra]     | None      | None      | None       | None       | None
 
           
 ## Lecture 1: 
