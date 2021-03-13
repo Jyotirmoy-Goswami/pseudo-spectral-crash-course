@@ -1,4 +1,4 @@
-# Resource Lecture 2
+# Resource (Lecture 2)
 
 As mentioned, I add the link of Blackboard lectures by Jayanta K. Bhattacharjee(JKB) and Rama Govindarajan.
 
