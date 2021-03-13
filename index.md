@@ -26,6 +26,12 @@ A series of lectures (in [Hinglish](https://en.wikipedia.org/wiki/Hinglish)) are
 
 # Lecture description
 
+Lecture 1 | Lecture 2 | Lecture 3 | Lecture 4 | Lecture 5 | Lecture 6 | Lecture 7 | Lecture 8 | Lecture 9 | Lecture 10 | Lecture 11 | Lecture 12
+_________   _________   _________  _________    _________   _________   _________   _________   _________   __________   __________   __________  
+Resources | Resources |           |           |           | Resources | Resources | Resources | Resources | Resources  | Resources  |
+          |           | Quiz      |           | Quiz      | Quiz      | Quiz      |           |           | Quiz       |            | Quiz
+          |           |           |           |           |           | Extra     |           |           |            |            | 
+          
 ## Lecture 1: 
 In the first part of the lecture, I described some basic idea about different spectral methods, concept of basis function, projection of a function into different basis, accuracy of spectral methods over finite difference schemes, idea of spectral convergence. Further I chose one of the many available complete basis function (i.e. Fourier basis) and talked about pseudo-spectral method, specifically showing one example, named "Burgers equation". The analytical solution of this equation is [well documented](https://arxiv.org/pdf/nlin/0012033.pdf).
 
