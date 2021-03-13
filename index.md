@@ -26,12 +26,20 @@ A series of lectures (in [Hinglish](https://en.wikipedia.org/wiki/Hinglish)) are
 
 # Lecture description
 
-[Lecture 1](lecture1.md) | [Lecture 2](lecture2.md) | [Lecture 3](lecture3.md) | [Lecture 4](lecture4.md) | [Lecture 5](lecture5.md) | [Lecture 6](lecture6.md) | [Lecture 7](lecture7.md) | [Lecture 8](lecture8.md) | [Lecture 9](lecture9.md) | [Lecture 10](lecture10.md) | [Lecture 11](lecture11.md) | [Lecture 12](lecture12.md)
------------- | ------------- | ------------ | ------------- | ------------ | ------------- | ------------ | ------------- | ------------ | ------------- | ------------ | ------------- 
-[Resources](resources/resource_lecture1.md) | [Resources](resources/resource_lecture2.md) | None      | None      | None      | [Resources](resources/resource_lecture6.md) | [Resources](resources/resource_lecture7.md) | [Resources](resources/resource_lecture8.md) | [Resources](resources/resource_lecture9.md) | [Resources](resources/resource_lecture10.md)  | [Resources](resources/resource_lecture11.md)  | None
-None      | None      | [Quiz](quiz/quiz_lecture3.md)      | None      | [Quiz](quiz/quiz_lecture5.md)      | [Quiz](quiz/quiz_lecture6.md)      | [Quiz](quiz/quiz_lecture7.md)      | None      | None      | [Quiz](quiz/quiz_lecture10.md)       | None       | [Quiz](quiz/quiz_lecture12.md)
-None      | None      | None      | None      | None      | None      | [Extra](extra/extra_lecture7.md)     | None      | None      | None       | None       | None
-[YouTube](https://youtu.be/m_dle8vr3dU)      | [YouTube](https://youtu.be/B0wgOq_ECpI)      | [YouTube](https://youtu.be/AS2ubgAKW80)      | [YouTube](https://youtu.be/zDAMAdWk0DM)      | [YouTube](https://youtu.be/Jd86s2-8Zi0)      | [YouTube](https://youtu.be/XTalV2kUDPA)      | [YouTube](https://youtu.be/HoD9UJvOkPQ)     | [YouTube](https://youtu.be/b35LvlSZOuc)      | [YouTube](https://youtu.be/7FRiqSK6mBU)      | [YouTube](https://youtu.be/87KAvsfV73w)       | [YouTube](https://youtu.be/mrAoE4lFvas)       | [YouTube](https://youtu.be/IoTquSbTgoQ)
+[Lecture 1](lecture1.md) | [Lecture 2](lecture2.md) | [Lecture 3](lecture3.md) | [Lecture 4](lecture4.md) | [Lecture 5](lecture5.md) | [Lecture 6](lecture6.md)
+------------ | ------------- | ------------ | ------------- | ------------ | ------------- 
+[Resources](resources/resource_lecture1.md) | [Resources](resources/resource_lecture2.md) | None      | None      | None      | [Resources](resources/resource_lecture6.md) 
+None      | None      | [Quiz](quiz/quiz_lecture3.md)      | None      | [Quiz](quiz/quiz_lecture5.md)      | [Quiz](quiz/quiz_lecture6.md)      
+None      | None      | None      | None      | None      | None      
+[YouTube](https://youtu.be/m_dle8vr3dU)      | [YouTube](https://youtu.be/B0wgOq_ECpI)      | [YouTube](https://youtu.be/AS2ubgAKW80)      | [YouTube](https://youtu.be/zDAMAdWk0DM)      | [YouTube](https://youtu.be/Jd86s2-8Zi0)      | [YouTube](https://youtu.be/XTalV2kUDPA)      
+
+
+[Lecture 7](lecture7.md) | [Lecture 8](lecture8.md) | [Lecture 9](lecture9.md) | [Lecture 10](lecture10.md) | [Lecture 11](lecture11.md) | [Lecture 12](lecture12.md)
+------------ | ------------- | ------------ | ------------- | ------------ | ------------- 
+[Resources](resources/resource_lecture7.md) | [Resources](resources/resource_lecture8.md) | [Resources](resources/resource_lecture9.md) | [Resources](resources/resource_lecture10.md)  | [Resources](resources/resource_lecture11.md)  | None
+[Quiz](quiz/quiz_lecture7.md)      | None      | None      | [Quiz](quiz/quiz_lecture10.md)       | None       | [Quiz](quiz/quiz_lecture12.md)
+[Extra](extra/extra_lecture7.md)     | None      | None      | None       | None       | None
+[YouTube](https://youtu.be/HoD9UJvOkPQ)     | [YouTube](https://youtu.be/b35LvlSZOuc)      | [YouTube](https://youtu.be/7FRiqSK6mBU)      | [YouTube](https://youtu.be/87KAvsfV73w)       | [YouTube](https://youtu.be/mrAoE4lFvas)       | [YouTube](https://youtu.be/IoTquSbTgoQ)
 
 # Code Reference
 The name of the codes/programs have been modified to recognize the pupose of the codes easily. The names used in the lectures can be found from the following table:
