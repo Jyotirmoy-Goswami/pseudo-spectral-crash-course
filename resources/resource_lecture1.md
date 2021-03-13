@@ -1,3 +1,4 @@
+# Resource Lecture 1
 Instruction for installing FFTW library:
 
 Download the latest version from [here](http://www.fftw.org/download.html)
