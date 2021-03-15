@@ -1,3 +1,9 @@
+# Code Description
+
+## hybrid_do.f95: 
+
+This is a program to teach Hybrid (= OpenMP + MPI) nested-do loops.
+
 ```fortran
 program hybrid_test
 use omp_lib
