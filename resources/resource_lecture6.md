@@ -1,6 +1,6 @@
 # Resource (Lecture 6)
 
-Regarding Aliasing and de-aliasing methods, I will explain in short in the next lecture (**Lecture 7**). But for a more detailed overview you can look at the following link:
+Regarding Aliasing and de-aliasing methods, I will explain in short in the next lecture ([Lecture 7](../lecture7.md)). But for a more detailed overview you can look at the following link:
 * https://en.wikipedia.org/wiki/Aliasing
 * https://www.astro.auth.gr/~vlahos/GravitoplasmaWS1/pseudo-spectral_2.pdf
 
