@@ -1,3 +1,9 @@
+# Code Description
+
+## poisson_2d.f95: 
+
+This code evaluates the Poisson equation in two dimension using psedo-spectral method.
+
 ```fortran
 program fft2
 
