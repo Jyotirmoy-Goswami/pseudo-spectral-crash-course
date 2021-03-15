@@ -1,3 +1,9 @@
+# Code Description
+
+## omp_do.f95: 
+
+This is a program to teach OpenMP do loops.
+
 ```fortran
 program OMP_Do
 ! To run this program: gfortran -fopenmp omp_do.f95; ./a.out
