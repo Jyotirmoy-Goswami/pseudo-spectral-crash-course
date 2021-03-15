@@ -1,3 +1,9 @@
+# Code Description
+
+## fftw_2d.f95: 
+
+This code takes a set of random numbers as input of two dimensional array, takes their Fourier transform using two dimensional FFTW library and then calculates the inverse Fourier transform, thus finally comparing the result with the input random numbers.
+
 ```fortran
 program fft2
 
