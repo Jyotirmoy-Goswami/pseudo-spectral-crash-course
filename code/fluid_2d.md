@@ -1,3 +1,9 @@
+# Code Description
+
+## fluid_2d.f95: 
+
+This code evaluates the two dimensional incompressible Navier-Stokes equation in vorticity-stream-function formalism using psedo-spectral method as spatial discretization and Adams-Bashforth algorithm for temporal updates. The initial condition is taken as counter-streaming flows thereby akin to Kelvin-Helmholtz type instability.
+
 ```fortran
 program fft2
 
