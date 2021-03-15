@@ -12,5 +12,5 @@ $ mpif90 -fopenmp -I/usr/local/include -L/usr/local/lib poisson_3d_hybrid.f95 -l
 ```
 
 ### Quiz - 6: 
-Can you turn the code [hybrid_do.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/hybrid_do.f95) into a 3d hybrid Poisson solver?
+Can you turn the code [hybrid_do.f95](../code/hybrid_do.md) into a 3d hybrid Poisson solver?
 If you can solve Quiz - 9, this course is over!!!
