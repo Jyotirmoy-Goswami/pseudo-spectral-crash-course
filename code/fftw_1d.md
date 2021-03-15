@@ -1,3 +1,9 @@
+# Code Description
+
+## fftw_1d.f95: 
+
+This code takes a set of random numbers as input, takes their Fourier transform using one dimensional FFTW library and then calculates the inverse Fourier transform, thus finally comparing the result with the input random numbers.
+
 ```fortran
 PROGRAM fft
 
