@@ -47,7 +47,7 @@ The name of the codes/programs have been modified to recognize the pupose of the
 
 Lecture | GitHub Code Name | Original Name | GitHub Code Name | Original Name 
 ------- | --------- | ------------- | --------- | -------------
-Lecture 1 | [fftw_1d.f95](code/fftw1d.md) | test.f95 | [fluid_1d.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fluid_1d.f95) | test_1.f95
+Lecture 1 | [fftw_1d.f95](code/fftw1d.md) | test.f95 | [fluid_1d.f95](code/fluid1d.md) | test_1.f95
 Lecture 2 | [fourier_transform.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fourier_transform.f95) | fourier.f95 | [fluid_1d.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fluid_1d.f95) | test_1.f95
 Lecture 3 | [fftw_2d.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fftw_2d.f95) | 2d_fft.f95
 Lecture 4 | [poisson_2d.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/poisson_2d.f95) | 2d_fft.f95
