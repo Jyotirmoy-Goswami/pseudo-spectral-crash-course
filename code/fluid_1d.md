@@ -1,3 +1,9 @@
+# Code Description
+
+## fluid_1d.f95: 
+
+This code solves one dimensional Burgers equation using pseudo-spectral method for spatial discretization and Adams-Bashforth algorithm for temporal update, with sin wave as initial condition. A shock appears at time t = 1.
+
 ```fortran
 program burgers
 implicit none
