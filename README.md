@@ -1,6 +1,7 @@
 Solving PDEs by Pseudo Spectral Method
 ===============================================
-A repository of teaching numerical algorithms for solving fluid equations. The lectures slides can be found [here](PseudoSpectralTeachingSlides.pdf).
+A repository of teaching numerical algorithms for solving fluid equations. The corresponding webpage is [here](https://rupakmukherjee.github.io/pseudo-spectral-crash-course/)
+The lectures slides can be found [here](PseudoSpectralTeachingSlides.pdf).
 
 Instructor: | [Dr. Rupak Mukherjee](https://github.com/RupakMukherjee)
 
