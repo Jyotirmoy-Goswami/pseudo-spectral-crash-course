@@ -47,7 +47,7 @@ The name of the codes/programs have been modified to recognize the pupose of the
 
 Lecture | GitHub Code Name | Original Name | GitHub Code Name | Original Name 
 ------- | --------- | ------------- | --------- | -------------
-Lecture 1 | [fftw_1d.f95](code/fftw1d.md) | test.f95 | [fluid_1d.f95](code/fluid1d.md) | test_1.f95
+Lecture 1 | [fftw_1d.f95](code/fftw_1d.md) | test.f95 | [fluid_1d.f95](code/fluid_1d.md) | test_1.f95
 Lecture 2 | [fourier_transform.f95](code/fourier_transform.md) | fourier.f95 | [fluid_1d.f95](code/fluid_1d.md) | test_1.f95
 Lecture 3 | [fftw_2d.f95](code/fftw_2d.md) | 2d_fft.f95
 Lecture 4 | [poisson_2d.f95](code/poisson_2d.md) | 2d_fft.f95
