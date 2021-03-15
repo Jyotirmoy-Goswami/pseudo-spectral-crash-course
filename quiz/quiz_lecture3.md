@@ -1,7 +1,7 @@
 # Quiz (Lecture 3)
 
 ## Quiz - 1: 
-Can you modify the [1D Burgers code](code/fluid_1d.md), and reproduce electron-plasma-oscillation? 
+Can you modify the [1D Burgers code](../code/fluid_1d.md), and reproduce electron-plasma-oscillation? 
 
 (Hint: Look at the plasma oscillation section of Davidson's book)
 
