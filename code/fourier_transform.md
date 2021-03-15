@@ -1,3 +1,9 @@
+# Code Description
+
+## fourier_transform.f95: 
+
+This code is a one dimensional serial Fourier transform solver. No external library is used in the code. It is for teaching / demonstration purpose only explicitly documenting the formulae of Fourier series from standard texts.
+
 ```fortran
 PROGRAM Fourier_Transform
 
