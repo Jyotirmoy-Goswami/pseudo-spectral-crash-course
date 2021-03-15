@@ -1,3 +1,9 @@
+# Code Description
+
+## mpi_do.f95: 
+
+This is a program to teach MPI do loops.
+
 ```fortran
 !mpif90 block_loop.f90
 !mpirun -np 4 ./a.out
