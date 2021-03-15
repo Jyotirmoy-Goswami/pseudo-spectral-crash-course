@@ -1,3 +1,4 @@
+```fortran
 PROGRAM fft
 
   IMPLICIT NONE
@@ -40,3 +41,4 @@ PROGRAM fft
   write(*,*) i, u(i), u_dum(i)/dfloat(N)
   enddo
 END PROGRAM fft
+```
