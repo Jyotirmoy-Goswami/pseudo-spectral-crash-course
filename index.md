@@ -48,17 +48,17 @@ The name of the codes/programs have been modified to recognize the pupose of the
 Lecture | GitHub Code Name | Original Name | GitHub Code Name | Original Name 
 ------- | --------- | ------------- | --------- | -------------
 Lecture 1 | [fftw_1d.f95](code/fftw1d.md) | test.f95 | [fluid_1d.f95](code/fluid1d.md) | test_1.f95
-Lecture 2 | [fourier_transform.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fourier_transform.f95) | fourier.f95 | [fluid_1d.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fluid_1d.f95) | test_1.f95
-Lecture 3 | [fftw_2d.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fftw_2d.f95) | 2d_fft.f95
-Lecture 4 | [poisson_2d.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/poisson_2d.f95) | 2d_fft.f95
-Lecture 5 | [fluid_2d.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fluid_2d.f95) | 2d_fft.f95
-Lecture 6 | [fluid_2d.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fluid_2d.f95) | 2d_fft.f95
+Lecture 2 | [fourier_transform.f95](code/fourier_transform.md) | fourier.f95 | [fluid_1d.f95](code/fluid_1d.md) | test_1.f95
+Lecture 3 | [fftw_2d.f95](code/fftw_2d.md) | 2d_fft.f95
+Lecture 4 | [poisson_2d.f95](code/poisson_2d.md) | 2d_fft.f95
+Lecture 5 | [fluid_2d.f95](code/fluid_2d.md) | 2d_fft.f95
+Lecture 6 | [fluid_2d.f95](code/fluid_2d.md) | 2d_fft.f95
 Lecture 7 |
-Lecture 8 | [omp_do.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/omp_do.f95) | omp.f95 | [omp_nested_do.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/omp_nested_do.f95) | omp.f95
-Lecture 9 | [mpi_do.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/mpi_do.f95) | mpi.f95
-Lecture 10| [mpi_nested_do.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/mpi_nested_do.f95) | mpi.f95 | [hybrid_do.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/hybrid_do.f95) | hybrid.f95
-Lecture 11| [fftw_omp.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fftw_omp.f95) | 2d_fft.f95 | [fftw_mpi.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fftw_mpi.f95) | 2d_fft.f95
-Lecture 12| [fluid_2d_with_tracers.f95](https://github.com/RupakMukherjee/pseudo-spectral-crash-course/blob/master/fluid_2d_with_tracers.f95) | 2d_fft.f95
+Lecture 8 | [omp_do.f95](code/omp_do.md) | omp.f95 | [omp_nested_do.f95](code/omp_nested_do.md) | omp.f95
+Lecture 9 | [mpi_do.f95](code/mpi_do.md) | mpi.f95
+Lecture 10| [mpi_nested_do.f95](code/mpi_nested_do.md) | mpi.f95 | [hybrid_do.f95](code/hybrid_do.md) | hybrid.f95
+Lecture 11| [fftw_omp.f95](code/fftw_omp.md) | 2d_fft.f95 | [fftw_mpi.f95](code/fftw_mpi.md) | 2d_fft.f95
+Lecture 12| [fluid_2d_with_tracers.f95](code/fluid_2d_with_tracers.md) | 2d_fft.f95
 
 # Code Description
 ## fourier_transform.f95: 
