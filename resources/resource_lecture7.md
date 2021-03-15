@@ -10,7 +10,7 @@ One other option to simulate boundaries / bounded flows, within pseudo-spectral 
 * [https://doi.org/10.1016/j.cpc.2010.05.019](https://doi.org/10.1016/j.cpc.2010.05.019)
 * [https://doi.org/10.1016/j.compfluid.2004.09.006](https://doi.org/10.1016/j.compfluid.2004.09.006)
 
-You can get some funny videos on turbulence (some of which you can now simulate now using the 2dfft.f95 code) here.
+You can get some funny videos on turbulence (some of which you can now simulate now using the [2dfft.f95](../code/fluid_2d.md) code) here.
 [https://www.youtube.com/watch?v=5zI9sG3pjVU](https://www.youtube.com/watch?v=5zI9sG3pjVU)
 
 And here is one more link [http://www.lcs-fast.com/fifth_order/](http://www.lcs-fast.com/fifth_order/) that shows some spectral simulation of air flows around a racing-car. But note that these are not pseudo-spectral. The basic idea is same though. The only difference is, instead of Fourier basis, they have used Legendre or Chebyshev basis (and sometimes Hermite also!) for better accuracy! If you are feeling confused, revise our first discussion and specifically look at the first slide!
