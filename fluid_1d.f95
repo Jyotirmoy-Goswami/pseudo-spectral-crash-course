@@ -1,7 +1,7 @@
 program burgers
-implicit none
+!implicit none
 
-include "fftw3.f"
+!include "fftw3.f"
 
 integer, parameter :: N = 1024
 integer, parameter :: Nh = N/2+1
